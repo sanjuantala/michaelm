@@ -1,0 +1,324 @@
+{
+  "sections": {
+    "c32b8f2f-abb7-4ee5-ba56-a5733cba84c9": {
+      "type": "section-hero",
+      "settings": {
+        "height": "image-height",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Shop_Mother_s_Day_3_a40897cf-487a-4f15-875d-9721f1238538.jpg",
+        "img-link": "shopify:\/\/collections\/gift-guide",
+        "mobile_height": "image-height--mobile",
+        "flex_align": "align--middle-center",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#ffffff"
+      }
+    },
+    "7c260e62-7d65-4da9-ae4f-084468247c10": {
+      "type": "section-gift-collection",
+      "settings": {
+        "heading": "",
+        "description": "<h6>Trending Gifts<\/h6>",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "btn--small",
+        "button_style": "btn--solid",
+        "show_arrow": true,
+        "featured_collection": "trending-gifts",
+        "style": "slider",
+        "grid": 5,
+        "rows": 1,
+        "layout_mobile": "carousel",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 35,
+        "padding_bottom": 32
+      }
+    },
+    "section_columns_pPEycL": {
+      "type": "section-columns",
+      "blocks": {
+        "image_m9k6nD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_26.jpg",
+            "title": "",
+            "heading_size": 3,
+            "text": "<p>Each piece is a testament to timeless beauty, making them the perfect gifts to celebrate special moments and create lasting memories.<\/p>",
+            "text_size": 4,
+            "button_text": "$750 & Under",
+            "button_url": "shopify:\/\/collections\/750-and-under",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": true
+          }
+        },
+        "image_qUtmEW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_b27a6792-4119-40c6-af9b-2ec282beed59.jpg",
+            "title": "",
+            "heading_size": 4,
+            "text": "<p>From sleek geometric earrings to statement rings, each item is meticulously designed to elevate your look with a bold and modern aesthetic. <\/p>",
+            "text_size": 4,
+            "button_text": "Modern Gifts",
+            "button_url": "shopify:\/\/collections\/modern-gifts-2023-gift-guide",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": true
+          }
+        },
+        "image_3NRnb4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_dfc5fca8-2079-4fa8-8f31-f1b4a6a6146a.jpg",
+            "title": "",
+            "heading_size": 4,
+            "text": "<p>The epitome of timeless elegance a curated selection featuring enduring classics such as diamond huggies, diamond pendants, and exclusive one-of-a-kind pieces. <\/p>",
+            "text_size": 4,
+            "button_text": "Classic Gifts",
+            "button_url": "shopify:\/\/collections\/classic-gifts",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "image_m9k6nD",
+        "image_qUtmEW",
+        "image_3NRnb4"
+      ],
+      "settings": {
+        "title": "Shop by Guide",
+        "heading_size": 4,
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "image_aspect_ratio": 1.3,
+        "mobile_image_aspect_ratio": 1.3,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "carousel"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "subheading": "",
+        "subheading_size": 6,
+        "show_title": false,
+        "heading_size": 8,
+        "show_content": true,
+        "text_size": 4,
+        "align_text": "text-center",
+        "width": "wrapper--full-padded",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_hero_TgEpDj": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_cXzyRR": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "heading_size": 11
+          }
+        },
+        "text_BDpGBi": {
+          "type": "text",
+          "settings": {
+            "description": "Personalized Gifts",
+            "text_size": 7,
+            "text_style": "font-heading"
+          }
+        },
+        "button_wP8EJj": {
+          "type": "button",
+          "settings": {
+            "link_text": "View products",
+            "link": "shopify:\/\/collections\/personalized-gifts",
+            "button_type": "btn--black",
+            "button_size": "btn--small",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cXzyRR",
+        "text_BDpGBi",
+        "button_wP8EJj"
+      ],
+      "settings": {
+        "height": "image-height",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Untitled_design_39.jpg",
+        "img-link": "shopify:\/\/collections\/personalized-gifts",
+        "mobile_height": "screen-height-one-third--mobile",
+        "flex_align": "align--top-left",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#000000"
+      }
+    },
+    "a5d8dea3-a1b8-4683-9b69-883f2055d52e": {
+      "type": "section-custom-content",
+      "blocks": {
+        "template--21507757113627__a5d8dea3-a1b8-4683-9b69-883f2055d52e-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16_9_Orb_Ring_2_1.webp",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": true,
+            "title": "",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "template--21507757113627__a5d8dea3-a1b8-4683-9b69-883f2055d52e-text-1": {
+          "type": "text",
+          "settings": {
+            "subheading": "THE MICHAEL M DIFFERENCE",
+            "subheading_size": 4,
+            "title": "",
+            "heading_size": 1,
+            "text": "<p><br\/>It’s how we hand set every diamond and how every prong is meticulously drilled. It’s in each loupe we look through and every unique design we balance. Blending timeless European style with future facing sustainable craftsmanship, every<br\/>MICHAEL M customizable engagement ring, wedding band and fashion jewelry piece is made with superior quality and attention to every detail. It’s in the transformation of rarity into magnificence reflecting decades of integrity and dedication.<br\/>An American legacy in the making. Sustainably sourced. Always handcrafted.<\/p>",
+            "text_size": 4,
+            "button_text": "Learn more",
+            "button_url": "shopify:\/\/pages\/our-story",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21507757113627__a5d8dea3-a1b8-4683-9b69-883f2055d52e-image-1",
+        "template--21507757113627__a5d8dea3-a1b8-4683-9b69-883f2055d52e-text-1"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full-padded",
+        "borders": false,
+        "reverse_blocks": false,
+        "padding_top": 50,
+        "padding_bottom": 0
+      }
+    },
+    "93373ea7-a357-4a53-be94-c0dcad056890": {
+      "type": "section-text-row",
+      "blocks": {
+        "template--21507757113627__93373ea7-a357-4a53-be94-c0dcad056890-icon-1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-donation",
+            "icon_size": 40,
+            "icon_color": "#ab8c52",
+            "title": "ETHICALLY SOURCED",
+            "heading_size": 3,
+            "text": "<p>We are committed to complying with best practices in regards to ethics, human rights, social responsibility and protection of the environment.<\/p>",
+            "text_size": 3
+          }
+        },
+        "template--21507757113627__93373ea7-a357-4a53-be94-c0dcad056890-icon-2": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-gift",
+            "icon_size": 40,
+            "icon_color": "#ab8c52",
+            "title": "COMPLIMENTARY DELIVERY",
+            "heading_size": 3,
+            "text": "<p>We offer complimentary shipping and returns for all MICHAEL M online orders.<\/p>",
+            "text_size": 3
+          }
+        },
+        "template--21507757113627__93373ea7-a357-4a53-be94-c0dcad056890-icon-3": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-planet",
+            "icon_size": 40,
+            "icon_color": "#ab8c52",
+            "title": "MADE TO ORDER",
+            "heading_size": 3,
+            "text": "<p>Each ring can be customized to meet your desired look. Your ring, your way.<\/p>",
+            "text_size": 3
+          }
+        },
+        "35628f13-2c11-41ae-961a-6a6419ad8a1d": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_size": 40,
+            "icon_color": "#ab8c52",
+            "title": "MM AT YOUR SERVICE",
+            "heading_size": 3,
+            "text": "<p>Our Brand<br\/>Concierge team is always here to help.<\/p>",
+            "text_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "template--21507757113627__93373ea7-a357-4a53-be94-c0dcad056890-icon-1",
+        "template--21507757113627__93373ea7-a357-4a53-be94-c0dcad056890-icon-2",
+        "template--21507757113627__93373ea7-a357-4a53-be94-c0dcad056890-icon-3",
+        "35628f13-2c11-41ae-961a-6a6419ad8a1d"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 5,
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "grid"
+      }
+    }
+  },
+  "order": [
+    "c32b8f2f-abb7-4ee5-ba56-a5733cba84c9",
+    "7c260e62-7d65-4da9-ae4f-084468247c10",
+    "section_columns_pPEycL",
+    "main",
+    "section_hero_TgEpDj",
+    "a5d8dea3-a1b8-4683-9b69-883f2055d52e",
+    "93373ea7-a357-4a53-be94-c0dcad056890"
+  ]
+}

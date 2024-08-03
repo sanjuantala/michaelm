@@ -1,0 +1,383 @@
+{
+  "sections": {
+    "section_collections_list_FGf6C6": {
+      "type": "section-collections-list",
+      "blocks": {
+        "collection_XbiErz": {
+          "type": "collection",
+          "settings": {
+            "collection": "womens-wedding-bands",
+            "collection_image": "shopify:\/\/shop_images\/Photoroom_20240611_095956.jpg",
+            "title": ""
+          }
+        },
+        "collection_Vy7MBL": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-wedding-bands",
+            "collection_image": "shopify:\/\/shop_images\/Photoroom_20240611_101734.jpg",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_XbiErz",
+        "collection_Vy7MBL"
+      ],
+      "settings": {
+        "title": "Explore Wedding Bands",
+        "description": "",
+        "layout": "grid",
+        "aspect_ratio": 1,
+        "grid": 2,
+        "layout_mobile": "1",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "section_collections_list_7RADWQ": {
+      "type": "section-collections-list",
+      "blocks": {
+        "collection_Atr3Bj": {
+          "type": "collection",
+          "settings": {
+            "collection": "crown-eternity-bands",
+            "title": ""
+          }
+        },
+        "collection_Qj9dMb": {
+          "type": "collection",
+          "settings": {
+            "collection": "single-row-bands",
+            "title": ""
+          }
+        },
+        "collection_TBTJBt": {
+          "type": "collection",
+          "settings": {
+            "collection": "curved-bands",
+            "collection_image": "shopify:\/\/shop_images\/michael-m-wedding-bands-white-gold-wedding-band-r440b-8218593165371.webp",
+            "title": ""
+          }
+        },
+        "collection_mMGArr": {
+          "type": "collection",
+          "settings": {
+            "collection": "triple-row-bands",
+            "collection_image": "shopify:\/\/shop_images\/michael-m-wedding-bands-white-gold-wedding-band-r401sb-8218601095227.webp",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_Atr3Bj",
+        "collection_Qj9dMb",
+        "collection_TBTJBt",
+        "collection_mMGArr"
+      ],
+      "settings": {
+        "title": "Explore by Style",
+        "description": "",
+        "layout": "grid",
+        "aspect_ratio": 1,
+        "grid": 4,
+        "layout_mobile": "2",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "subheading_size": 6,
+        "show_title": false,
+        "heading_size": 8,
+        "show_content": true,
+        "text_size": 4,
+        "align_text": "text-left",
+        "width": "wrapper--full-padded",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 26,
+        "padding_bottom": 50
+      }
+    },
+    "featured_posts_yg6d4t": {
+      "type": "featured-posts",
+      "blocks": {
+        "featured_post_kBKm46": {
+          "type": "featured_post",
+          "settings": {
+            "featured_post": "news\/how-to-choose-a-wedding-ring",
+            "subheading": "Featured post",
+            "image": "shopify:\/\/shop_images\/couple_wedding_bands_rings.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "featured_post_kBKm46"
+      ],
+      "settings": {
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "width": "wrapper--full",
+        "show_author": false,
+        "show_date": false,
+        "show_button": true,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 37,
+        "padding_bottom": 37
+      }
+    },
+    "section_blog_qtPKc4": {
+      "type": "section-blog",
+      "settings": {
+        "blog_name": "news",
+        "title": "Blog posts",
+        "grid": 4,
+        "rows": 1,
+        "aspect_ratio": 1,
+        "show_tags": false,
+        "show_author": false,
+        "show_date": false,
+        "show_button": false,
+        "show_comments": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 32,
+        "padding_bottom": 63
+      }
+    },
+    "section_rich_text_ekkhat": {
+      "type": "section-rich-text",
+      "disabled": true,
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 2
+      }
+    },
+    "003fcc50-9301-4178-835c-817b997a9825": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-0": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "text_size": 1
+          }
+        },
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-1": {
+          "type": "heading",
+          "settings": {
+            "title": "THE MICHAEL M DIFFERENCE",
+            "text_size": 5
+          }
+        },
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It’s how we hand set every diamond and how every prong is meticulously drilled. It’s in each loupe we look through and every unique design we balance. Blending timeless European style with future facing sustainable craftsmanship, every<br\/>MICHAEL M customizable engagement ring, wedding band and fashion jewelry piece is made with superior quality and attention to every detail. It’s in the transformation of rarity into magnificence reflecting decades of integrity and dedication.<br\/>An American legacy in the making. Sustainably sourced. Always handcrafted.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-0",
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-1",
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-2"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d": {
+      "type": "section-double",
+      "blocks": {
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-0": {
+          "type": "heading",
+          "settings": {
+            "title": "MADE TO LAST A LIFETIME",
+            "text_size": 4
+          }
+        },
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Crafted using only the finest quality materials - 14k, 18k and platinum that we alloy in-house - and diamonds that are hand selected and set with perfectly level tables. Every piece of MM jewelry is backed by a lifetime warranty against manufacturer defect and accompanied by an authenticity card.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body"
+          }
+        },
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-2": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-0",
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-1",
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-2"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/MM_GRAD_SET_05_BRIDAL_R800_STILL.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "78fb3602-e2ad-45f6-8ebd-9358f8ed2f76": {
+      "type": "section-double",
+      "blocks": {
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-0": {
+          "type": "heading",
+          "settings": {
+            "title": "ETHICALLY SOURCED",
+            "text_size": 5
+          }
+        },
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All our materials are ethically sourced from suppliers who follow conflict-free practices. MM is committed to complying with best practices in regards to ethics, human rights, social responsibility and protection of the environment.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body"
+          }
+        },
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-2": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-0",
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-1",
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-2"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/MM_GRAD_SET_08_BRIDAL_R_802_3_B_1_2.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_accordion_group_DWMjM6": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading_rLFmgc": {
+          "type": "heading",
+          "settings": {
+            "title": "FAQ"
+          }
+        },
+        "question_3JFbY8": {
+          "type": "question",
+          "settings": {
+            "title": "How long does a MICHAEL M order take to ship?  ",
+            "content": "<p>Online orders will ship within 7 business days. Custom orders will ship within 2-3 weeks.<\/p>"
+          }
+        },
+        "question_tyNB3W": {
+          "type": "question",
+          "settings": {
+            "title": "Are MICHAEL M products insured when shipped? ",
+            "content": "<p>All items shipped are <span style=\"text-decoration:underline\">FULLY INSURED<\/span> during transit; therefore, all shipments will require a signature at the time of delivery. No exceptions can be made. Please note that additional charges may accrue if additional delivery attempts are made. Please contact the MICHAEL M Care Team <a href=\"mailto:customer@michaelm.com\" target=\"_blank\" title=\"mailto:customer@michaelm.com\"><span style=\"text-decoration:underline\"><em>customer@michaelm.com <\/em><\/span><\/a>if your order details indicate the package has been delivered but nothing was received.<\/p>"
+          }
+        },
+        "question_BhX3fc": {
+          "type": "question",
+          "settings": {
+            "title": "How can I find out if an item sold online is available at my local store? ",
+            "content": "<p>When viewing a product on online, you can click “Store Locator” and input your location to search for your closest MICHAEL M retail partner. If the store does not carry the item, the store can request MICHAEL M send the item if it is in stock. Please note that the availability of products is subject to change. <\/p>"
+          }
+        },
+        "question_qw4MHg": {
+          "type": "question",
+          "settings": {
+            "title": "Does my engagement ring come with a Lifetime Warranty? ",
+            "content": "<p>The MICHAEL M Commitment to Service is a Lifetime Warranty that ensures the proper care & repair of your MICHAEL M jewelry. Maintenance and repairs of imperfections from the manufacturer will be done free of charge, but must be done by an authorized MICHAEL M retailer. If these conditions are not met, the MICHAEL M lifetime warranty will be void.<\/p>"
+          }
+        },
+        "question_Hx7HpA": {
+          "type": "question",
+          "settings": {
+            "title": "Can I upgrade my MICHAEL M jewelry? ",
+            "content": "<p>Yes, as part of our commitment to the quality of our diamonds, MICHAEL M allows you to upgrade your original MICHAEL M item at any time. Upon review, you will receive a credit up to 75% of the original purchase price, which can be used toward the purchase of a new MICHAEL M item (1:1 trade only). Please note, the retail price of the new item must be of greater or equal value than the original purchase price. Damaged or blemished engagement rings will not receive full credit. Visit a MICHAEL M retail partner near you to learn more about the MICHAEL M Trade Up Policy.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rLFmgc",
+        "question_3JFbY8",
+        "question_tyNB3W",
+        "question_BhX3fc",
+        "question_qw4MHg",
+        "question_Hx7HpA"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "section_collections_list_FGf6C6",
+    "section_collections_list_7RADWQ",
+    "main",
+    "featured_posts_yg6d4t",
+    "section_blog_qtPKc4",
+    "section_rich_text_ekkhat",
+    "003fcc50-9301-4178-835c-817b997a9825",
+    "44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d",
+    "78fb3602-e2ad-45f6-8ebd-9358f8ed2f76",
+    "section_accordion_group_DWMjM6"
+  ]
+}

@@ -1,0 +1,187 @@
+{%- liquid
+  assign bg_color = section.settings.bg_color
+  assign text_color = section.settings.color
+-%}
+
+{%- style -%}
+ #shopify-section-ringsize-template {
+   
+     --PT: {{ section.settings.padding_top }}px;
+    --PB: {{ section.settings.padding_bottom }}px;
+   
+    {%- unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank -%}
+      --bg: {{ bg_color }};
+    {%- endunless -%}
+
+    {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
+      --text: {{ text_color }};
+    {%- endunless -%}
+  }
+{%- endstyle -%}
+<section class="page color--primary-text pg-ringsize"  data-section-id="{{ section.id }}">
+  <div class="Container">
+    <div class="mm-pg-pd">
+     <header class="PageHeader">
+    <div class="SectionHeader SectionHeader--center">
+      <h1 class="SectionHeader__Heading Heading u-h1">
+      {% if section.settings.logo != blank %}<img src="{{ section.settings.logo | img_url:'master' }}" alt="{{ page.title }}" title="{{ page.title }}"/>{% else %}{{ page.title }}<span>Guide</span>{% endif %}
+      </h1>
+    </div>
+  </header>
+      
+      <div class="d-flex">
+        <div class="mm-item-box">
+          <div class="top-content">
+           {% if section.settings.top_title != blank %}<h3>{{ section.settings.top_title }}</h3>{% endif %}          
+            {% if section.settings.top_list != blank %}
+            <ul>
+              {{ section.settings.top_list }}              
+            </ul>
+            {% endif %}
+          </div>
+          <div class="middle-content">
+           {% if section.settings.middle_title != blank %}<h3>{{ section.settings.middle_title }}</h3>{% endif %}
+            
+          {% if section.settings.middle_list != blank %}  {{ section.settings.middle_list }} {% endif %}
+            
+          {% if section.settings.btn_title != blank %}  <a class="dwn-button" target="_blank" href="{% if section.settings.dwn_link != blank %}{{ section.settings.dwn_link }}{% else %}{{ 'MM_SizingGuide.pdf' | file_url }}{% endif %}" download>{{ section.settings.btn_title }}</a> {% endif %}
+          </div>
+          <div class="bottom-content">
+          {% if section.settings.bottom_title != blank %}  <h3>{{ section.settings.bottom_title }}</h3> {% endif %}
+			<!--   Options   -->
+           {% if section.settings.bottom_options != blank %} {{ section.settings.bottom_options }} {% endif %}
+          </div>
+        </div>
+        {% if section.settings.chart != blank %}
+        <div class="mm-item-box">
+          <div class="item-table">            
+            <img src="{{ section.settings.chart | img_url:'master' }}" alt="ring-sizing-table"/>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Ringsize",
+	"class": "section-ringsize-template",
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo image"
+        },
+		{
+            "type":"header",
+            "content": "Top Content"
+        },
+		{
+           "type": "text",
+           "id": "top_title",
+           "default": "ITEMS YOU WILL NEED",
+           "label": "Title"
+        },
+        {
+           "type": "textarea",
+           "id": "top_list",
+           "label": "Item List",
+		   "info":"* paste list item within <li> </li>"
+        },
+		{
+            "type":"header",
+            "content": "Middle Content"
+        },
+		{
+           "type": "text",
+           "id": "middle_title",
+           "default": "BEFORE YOU GET STARTED",
+           "label": "Title"
+        },
+        {
+           "type": "html",
+           "id": "middle_list",
+           "label": "Content",
+		   "info":"* paste content within <p> </p>"
+        },
+		{
+           "type": "text",
+           "id": "btn_title",
+           "default": "Download Pdf",
+           "label": "Button Title"
+        },
+        {
+          "id": "dwn_link",
+          "type": "url",
+          "label": "Button Link"
+        },
+		{
+            "type":"header",
+            "content": "Bottom Content"
+        },
+		{
+           "type": "text",
+           "id": "bottom_title",
+           "default": "MEASURE YOUR RING SIZE",
+           "label": "Title"
+        },
+		{
+           "type": "html",
+           "id": "bottom_options",
+           "label": "Option Content",
+		   "info":"* paste content using HTML tag"
+        },
+		{
+            "type":"header",
+            "content": "Size Chart"
+        },
+ 		{
+          "type": "image_picker",
+          "id": "chart",
+          "label": "Size Chart Image"
+        },
+       {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background"
+    },
+    {
+      "type": "color",
+      "id": "color", 
+      "label": "Text"
+    },
+      {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 50
+    }
+	 ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

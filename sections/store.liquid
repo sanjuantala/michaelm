@@ -1,0 +1,459 @@
+<link href="//fonts.googleapis.com/css2?family=Halant:wght@300&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+{{ 'jquery.datetimepicker.css' | asset_url | stylesheet_tag }}
+{{ 'stockist.scss.css' | asset_url | stylesheet_tag }}
+<script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<div class="journey__content-navigation">
+    <div class="page__main-content">
+        <div class="breadcrumbs">
+            <button class="breadcrumb-Location active">Location</button>
+            <button class="breadcrumb-Services">Services</button>
+            <button class="breadcrumb-Availability">Availability</button>
+            <button class="breadcrumb-Details">Details</button>
+            <button class="breadcrumb-Confirmation">Confirmation</button>
+        </div>
+        <div class="breadcrumbs-progress">
+          <div class="breadcrumbs-progress-bar" style="width:20%"></div>
+        </div>
+    </div>
+</div>
+
+<section id="location-section" class="location-section location-container store-section active">
+    <header class="page-heading">
+        <h1 id="page-header" class="page-heading__heading">Pick a location</h1>
+    </header>
+
+    <!-- Start Stockist.co widget -->
+    <div data-stockist-widget-tag="u4118">Loading store locator from <a href="https://stockist.co">Stockist store locator</a>...</div>
+    <script>
+    (function(s,t,o,c,k){c=s.createElement(t);c.src=o;c.async=1;
+    k=s.getElementsByTagName(t)[0];k.parentNode.insertBefore(c,k);
+    })(document,'script','//stockist.co/embed/v1/widget.min.js');
+    </script> <!-- End Stockist.co widget -->
+
+
+</section>
+
+
+
+<section id="service-section" class="service-section location-container store-section">
+    <header class="page-heading">
+        <h1 class="page-heading__heading">Pick a service</h1>
+    </header>
+
+    <div class="service-list-categories">
+        <button class="service-list-categories__item active" data-category="in-store">In-Store Appointment</button>
+    </div>
+
+    <div class="service-list__view">
+        <div class="service-list__container" data-category="in-store">
+            <div class="service-list-item">
+                <div class="service-card">
+                    <div class="card__image-box">
+                        <img src="https://cdn.shopify.com/s/files/1/0113/4677/2027/files/Consult__banner.jpg?v=1695831868" alt="Consult with a MM Diamond Expert">
+                    </div>
+                    <div class="card__content-box">
+                      <p class="card__time">1 hour</p>
+                      <h2 class="card__title">Consult with a MM Diamond Expert</h2>
+                      <div class="card__content-body">
+                        <button data-approx="1 hour" data-appointment="Consult with a MM Diamond Expert" class="btn btn-primary select-button">Select</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-list__container" data-category="virtual">
+            <div class="service-list-item">
+                <div class="service-card">
+                    <div class="card__image-box">
+                        <img src="https://cdn.shopify.com/s/files/1/0113/4677/2027/files/service__banner.jpg?v=1695831869" alt="Request a Service">
+                    </div>
+                    <div class="card__content-box">
+                      <p class="card__time">15 minutes</p>
+                      <h2 class="card__title">Request a Service</h2>
+                      <div class="card__content-body">
+                        <p class="card__description">Pick-up, cleaning, alteration, repair and personalization.</p>
+                        <button data-approx="15 minutes" data-appointment="Request a Service" class="btn btn-primary select-button">Select</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pagination">
+    </div>
+
+    {% comment %} <div class="action-buttons">
+      <button id="back-button" class="btn btn-default btn-back" disabled>
+        <span>Back</span>
+      </button>
+    </div> {% endcomment %}
+</section>
+
+
+
+
+
+<section id="availability-section" class="availability-section location-container store-section">
+
+    <header class="page-heading">
+        <h1 class="page-heading__heading">Select a date and time</h1>
+    </header>
+
+    <div class="month-calendar">
+      <input id="datetimepicker" type="text" />
+    </div>
+    <div class="action-buttons">
+      <button id="availability-back-button" class="btn btn-default btn-back">
+        <span>Back</span>
+      </button>
+      <button id="availability-next-button" class="btn btn-default btn-next">
+        <span>Next</span>
+      </button>
+    </div>
+</section>
+
+
+<section id="details-section" class="details-section location-container store-section">
+    <header class="page-heading">
+        <h1 class="page-heading__heading">Enter your details</h1>
+    </header>
+
+    <div class="details-page__form__main">
+      <div class="details-page__form two-columns__main">
+        {%- form 'contact', id: 'ContactForm', subject:'New Custom Order' -%}
+        {{ form.errors | default_errors }}
+
+        <input type="hidden" id="source" value="In-Store Appointment" name="contact[source]">
+        <input type="hidden" id="pick_a_service" name="contact[pick_a_service]">
+        <input type="hidden" id="service_where" name="contact[where]">
+        <input type="hidden" id="service_when" name="contact[when]">
+
+        <div class="personal-information__form information__form">
+          <h2>Personal information</h2>
+
+            <div class="form-filed input-filed">
+              <label for="first-name">First name*</label>
+              <input type="text" required name="contact[first_name]" id="first-name" class="input-group__field">
+            </div>
+            <div class="form-filed input-filed">
+              <label for="last-name">Last name*</label>
+              <input type="text" required id="last-name" name="contact[last_name]" class="input-group__field">
+            </div>
+            <div class="form-filed input-filed">
+              <label for="email">Email address*</label>
+              <input type="email" required name="contact[email]" id="email" class="input-group__field">
+            </div>
+            <div class="form-filed input-filed">
+              <label for="mobile">Mobile number*</label>
+              <input type="text" required id="mobile" name="contact[phone]" class="input-group__field">
+            </div>
+
+        </div>
+
+        {% comment %} <div class="additional-information__form information__form">
+          <h2>Additional information</h2>
+
+            <div class="form-filed select-filed">
+              <label for="service">Please select the service needed*</label>
+              <select required id="service" name="contact[service]" class="select-group__field">
+                <option value="">Select</option>
+                <option value="Repair">Repair</option>
+                <option value="Jewelry Cleaning Drop-off">Jewelry Cleaning Drop-off</option>
+                <option value="Alteration">Alteration</option>
+                <option value="Personalization">Personalization</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-filed textarea-filed">
+              <label for="appointment">Is there anything else you would like us to know prior to your appointment?</label>
+              <textarea id="appointment" rows="3" name="contact[message]" maxlength="250" class="textarea-group__field"></textarea>
+            </div>
+
+        </div> {% endcomment %}
+
+        <div class="data-protection-information__form information__form">
+          <h2>Data protection policy</h2>
+
+            <div class="form-filed checkbox-filed">
+              <input type="checkbox" id="protection" name="protection" class="checkbox">
+              <label for="protection">
+                <span>By checking this box, you acknowledge that you consent to the use of your data.</span>
+                <span>Please take this opportunity to review the terms of our <a href="/pages/privacy-policy" target="_blank">Global Privacy Policy</a>, which contains important information about how the Michael M communicates with you and uses your information.</span>
+              </label>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+          <button id="next-button" type="submit" class="btn btn-default btn-next">
+            <span>Submit</span>
+          </button>
+        </div>
+
+
+
+        {% endform %}
+      </div>
+
+      <div class="details-page__summary two-columns__side">
+        <div class="page__summary-side">
+          <div class="page__summary-content">
+            <div class="details-image">
+              <img src="https://cdn.shopify.com/s/files/1/0113/4677/2027/files/Consult__banner.jpg?v=1695831868" class="Consult__banner">
+              <img src="https://cdn.shopify.com/s/files/1/0113/4677/2027/files/service__banner.jpg?v=1695831869" class="service__banner">
+            </div>
+            <div class="details-text">
+              <div class="details-heading"><h2>Your booking</h2></div>
+              <div class="details-body">
+                <div class="basket-item">
+                  <div class="summary__heading mmStoreAppointment"></div>
+                  <div class="summary__text mmStoreAppointmentTime"></div>
+                </div>
+                <div class="basket-item">
+                  <div class="summary__heading formattedDateOnly"></div>
+                  <div class="summary__heading formattedTimeOnly"></div>
+                </div>
+                <div class="basket-item">
+                  <div class="summary__heading mmStoreAddress"></div>
+                  <div class="summary__text">
+                    <span class="mmStoreAddress1"></span><br/>
+                    <span class="mmStoreAddress2"></span><br/>
+                    <span class="mmStoreAddress3"></span><br/>
+                    <span class="mmStoreAddress4"></span><br/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section id="review-section" class="review-section location-container store-section">
+    <header class="page-heading">
+        <h1 class="page-heading__heading">Booking Confirmed</h1>
+    </header>
+
+    <div class="review-page__form__main">
+      <div class="review-message">
+        <div class="message-text">
+          Your reservation has been successfully made. Kindly review the information provided below.
+        </div>
+      </div>
+
+      <div class="review-details">
+        <div class="review-items">
+          <div class="review-title">
+            <h2>Service location</h2>
+          </div>
+          <div class="review-body">
+            <div class="review-inner-item">
+              <div class="review-small-title">Store name</div>
+              <div class="review-text mmStoreAddress"></div>
+            </div>
+            <div class="review-inner-item">
+              <div class="review-small-title">Address</div>
+              <div class="review-text">
+                <span class="mmStoreAddress1"></span>,
+                <span class="mmStoreAddress2"></span>,
+                <span class="mmStoreAddress3"></span>
+              </div>
+            </div>
+            <div class="review-inner-item">
+              <div class="review-small-title">Phone number</div>
+              <div class="review-text mmStoreAddress4"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-items">
+          <div class="review-title">
+            <h2>Service information</h2>
+          </div>
+          <div class="review-body">
+            <div class="review-inner-item">
+              <div class="review-small-title">Service</div>
+              <div class="review-text mmStoreAppointment"></div>
+            </div>
+            <div class="review-inner-item">
+              <div class="review-small-title">Duration</div>
+              <div class="review-text mmStoreAppointmentTime"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-items">
+          <div class="review-title">
+            <h2>Date and time</h2>
+          </div>
+          <div class="review-body">
+            <div class="review-inner-item">
+              <div class="review-small-title">Date</div>
+              <div class="review-text formattedDateOnly"></div>
+            </div>
+            <div class="review-inner-item">
+              <div class="review-small-title">Time</div>
+              <div class="review-text formattedTimeOnly"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-items">
+          <div class="review-title">
+            <h2>Your details</h2>
+          </div>
+          <div class="review-body">
+            <div class="review-inner-item">
+              <div class="review-small-title">Name</div>
+              <div class="review-text mm-customer-name"></div>
+            </div>
+            <div class="review-inner-item">
+              <div class="review-small-title">Email address</div>
+              <div class="review-text mm-customer-email"></div>
+            </div>
+            <div class="review-inner-item">
+              <div class="review-small-title">Mobile number</div>
+              <div class="review-text mm-customer-mobile"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review-maps">
+        <iframe
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="#">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="action-buttons endscreen">
+      <button class="btn btn-default btn-next reset-button">
+        <span>STORE LOCATOR</span>
+      </button>
+    </div>
+</section>
+
+
+
+
+<div class="additional-information__form information__form additional-consult">
+  <h2>Additional information</h2>
+  <div class="form-filed select-filed engaged_or_married checkbox-filed">
+    <label>Please check here if you are getting engaged or married.</label>
+  </div>
+    <div class="form-filed input-filed">
+      <label for="jewelry-interested">What type(s) of diamond jewelry are you interested in?</label>
+      <input type="text" autocomplete="off" required name="contact[interested_jewelry]" id="jewelry-interested" class="input-group__field">
+    </div>
+
+    <div class="form-filed input-filed">
+      <label for="bespoke-experience">To help us create a bespoke experience for you, what information would you like us to know ahead of your appointment?</label>
+      <input type="text" autocomplete="off" required name="contact[bespoke_experience]" id="bespoke-experience" class="input-group__field">
+    </div>
+
+</div>
+
+<div class="additional-information__form information__form additional-service">
+  <h2>Additional information</h2>
+
+    <div class="form-filed select-filed">
+      <label for="service">Please select the service needed*</label>
+      <select required id="service" name="contact[service]" class="select-group__field">
+        <option value="">Select</option>
+        <option value="Repair">Repair</option>
+        <option value="Jewelry Cleaning Drop-off">Jewelry Cleaning Drop-off</option>
+        <option value="Alteration">Alteration</option>
+        <option value="Personalization">Personalization</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-filed textarea-filed">
+      <label for="appointment">Is there anything else you would like us to know prior to your appointment?</label>
+      <textarea id="appointment" rows="3" autocomplete="off" name="contact[message]" maxlength="250" class="textarea-group__field"></textarea>
+    </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Store Locator",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Contact us"
+      },
+      {
+        "type": "checkbox",
+        "id": "terms",
+        "label": "Show reCAPTCHA terms",
+        "default": true,
+        "info": "Recommended if your online store preferences have spam protection enabled."
+      },
+      {
+        "type": "header",
+        "content": "Style"
+      },
+      {
+        "type": "select",
+        "id": "width",
+        "label": "Width",
+        "default": "wrapper--narrow",
+        "options": [
+          {"value": "wrapper", "label": "Normal"},
+          {"value": "wrapper--narrow", "label": "Narrow"}
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background"
+      },
+      {
+        "type": "color",
+        "id": "color",
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "Section padding"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 100
+      }
+    ],
+    "presets": [
+      {
+        "name": "Store Locator"
+      }
+    ]
+  }
+{% endschema %}

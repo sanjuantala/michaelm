@@ -1,0 +1,190 @@
+{
+  "sections": {
+    "hero": {
+      "type": "collection-image-with-title",
+      "settings": {
+        "show_title": true,
+        "show_description": true,
+        "flex_align": "align--middle-center",
+        "bg_color": "",
+        "color": "",
+        "show_image": true,
+        "banner_layout": "overlay",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "collection",
+      "settings": {
+        "enable_sort": true,
+        "enable_filters": true,
+        "filter_layout": "inline-closed",
+        "collection_linklist": "",
+        "grid": 4,
+        "grid_mobile": "2",
+        "product_limit": 24,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "subcollections": {
+      "type": "subcollections",
+      "settings": {
+        "subcollection_layout": "grid",
+        "subcollection_description": true,
+        "select_image": "collection",
+        "color": "#ffffff",
+        "bg_color": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "cb04d0b4-bdaa-4651-942c-14c66bc78e3e": {
+      "type": "section-custom-content",
+      "blocks": {
+        "template--19015464059163__cb04d0b4-bdaa-4651-942c-14c66bc78e3e-16848779136db8aff9-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16_9_Orb_Ring_2_1.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#ffffff",
+            "show_overlay_text": true,
+            "title": "",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "template--19015464059163__cb04d0b4-bdaa-4651-942c-14c66bc78e3e-16848779136db8aff9-1": {
+          "type": "text",
+          "settings": {
+            "subheading": "THE MICHAEL M DIFFERENCE",
+            "subheading_size": 4,
+            "title": "",
+            "heading_size": 1,
+            "text": "<p><br\/>It’s how we hand set every diamond and how every prong is meticulously drilled. It’s in each loupe we look through and every unique design we balance. Blending timeless European style with future facing sustainable craftsmanship, every<br\/>MICHAEL M customizable engagement ring, wedding band and fashion jewelry piece is made with superior quality and attention to every detail. It’s in the transformation of rarity into magnificence reflecting decades of integrity and dedication.<br\/>An American legacy in the making. Sustainably sourced. Always handcrafted.<\/p>",
+            "text_size": 4,
+            "button_text": "Learn more",
+            "button_url": "shopify:\/\/pages\/our-story",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19015464059163__cb04d0b4-bdaa-4651-942c-14c66bc78e3e-16848779136db8aff9-0",
+        "template--19015464059163__cb04d0b4-bdaa-4651-942c-14c66bc78e3e-16848779136db8aff9-1"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full-padded",
+        "borders": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "3f14f4ce-7be7-498d-976c-f9b4d0b1844c": {
+      "type": "section-text-row",
+      "blocks": {
+        "77ca0b12-3c61-4b76-ba71-35274c8c48a4": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-donation",
+            "icon_size": 40,
+            "icon_color": "#ab8c52",
+            "title": "ETHICALLY SOURCED",
+            "heading_size": 3,
+            "text": "<p>We are committed to complying with best practices in regards to ethics, human rights, social responsibility and protection of the environment.<\/p>",
+            "text_size": 3
+          }
+        },
+        "template--19015464059163__3f14f4ce-7be7-498d-976c-f9b4d0b1844c-16862505403dd94cab-0": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-gift",
+            "icon_size": 40,
+            "icon_color": "#ab8c52",
+            "title": "COMPLIMENTARY DELIVERY",
+            "heading_size": 3,
+            "text": "<p>We offer complimentary shipping and returns for all MICHAEL M online orders.<\/p>",
+            "text_size": 3
+          }
+        },
+        "template--19015464059163__3f14f4ce-7be7-498d-976c-f9b4d0b1844c-16862505403dd94cab-1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-planet",
+            "icon_size": 40,
+            "icon_color": "#ab8c52",
+            "title": "MADE TO ORDER",
+            "heading_size": 3,
+            "text": "<p>Each ring can be customized to meet your desired look. Your ring, your way.<\/p>",
+            "text_size": 3
+          }
+        },
+        "template--19015464059163__3f14f4ce-7be7-498d-976c-f9b4d0b1844c-16862505403dd94cab-2": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_size": 40,
+            "icon_color": "#ab8c52",
+            "title": "MM AT YOUR SERVICE",
+            "heading_size": 3,
+            "text": "<p>Our Brand<br\/>Concierge team is always here to help.<\/p><p><\/p>",
+            "text_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "77ca0b12-3c61-4b76-ba71-35274c8c48a4",
+        "template--19015464059163__3f14f4ce-7be7-498d-976c-f9b4d0b1844c-16862505403dd94cab-0",
+        "template--19015464059163__3f14f4ce-7be7-498d-976c-f9b4d0b1844c-16862505403dd94cab-1",
+        "template--19015464059163__3f14f4ce-7be7-498d-976c-f9b4d0b1844c-16862505403dd94cab-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 5,
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-center",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "grid"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "main",
+    "subcollections",
+    "cb04d0b4-bdaa-4651-942c-14c66bc78e3e",
+    "3f14f4ce-7be7-498d-976c-f9b4d0b1844c"
+  ]
+}

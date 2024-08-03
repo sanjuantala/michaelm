@@ -1,0 +1,71 @@
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "76b24f9d-c050-4662-b34c-f2355e2d7bd9": {
+          "type": "linklist",
+          "settings": {
+            "linklist": "customer-care",
+            "title": "CLIENT CARE",
+            "column_width": 33
+          }
+        },
+        "7ac83f2a-b868-4845-994f-f098f4df81f9": {
+          "type": "linklist",
+          "settings": {
+            "linklist": "lets-get-social",
+            "title": "",
+            "column_width": 33
+          }
+        },
+        "footer-0": {
+          "type": "newsletter",
+          "settings": {
+            "title": "LATEST FROM MICHAEL M",
+            "text": "<p>Be the first to know about exciting new designs, special events, store openings, and much more. <\/p>",
+            "show_name": true,
+            "button_text": "Join",
+            "show_arrow": false,
+            "terms": true,
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_social_links": false,
+            "column_width": 33
+          }
+        }
+      },
+      "block_order": [
+        "76b24f9d-c050-4662-b34c-f2355e2d7bd9",
+        "7ac83f2a-b868-4845-994f-f098f4df81f9",
+        "footer-0"
+      ],
+      "settings": {
+        "logo_image_width": 150,
+        "overlay_opacity": 75,
+        "overlay_color": "#ffffff",
+        "padding_top": 75,
+        "padding_bottom": 30
+      }
+    },
+    "supporting-menu": {
+      "type": "section-supporting-menu",
+      "settings": {
+        "linklist": "explore",
+        "footer_payment_enable": false,
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "type": "currency",
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "supporting-menu"
+  ]
+}

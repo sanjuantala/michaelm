@@ -1,0 +1,338 @@
+{
+  "sections": {
+    "section_custom_content_88JFLe": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_n7XhkW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16_9_Orb_Ring_2_1.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "Fine Jewelry",
+            "heading_size": 4,
+            "description": "Let your refined tastes speak for themselves.",
+            "text_size": 3,
+            "flex_align": "align--top-left",
+            "bg_color": "",
+            "color": "#212121",
+            "link_text": "Shop ALL",
+            "link": "",
+            "button_type": "btn--black",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "image_n7XhkW"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "borders": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": false,
+        "heading_size": 8,
+        "show_content": false,
+        "text_size": 4,
+        "align_text": "text-left",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_collection_ULaFHU": {
+      "type": "section-collection",
+      "settings": {
+        "heading": "",
+        "description": "<h3>New Arrivals<\/h3><p>Shop our exquisite and most recently launched collection of fine jewelry.<\/p>",
+        "layout": "left",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--secondary",
+        "button_size": "btn--large",
+        "button_style": "btn--outline",
+        "show_arrow": true,
+        "featured_collection": "new-arrivals-f",
+        "style": "slider",
+        "grid": 6,
+        "rows": 1,
+        "layout_mobile": "carousel",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 25
+      }
+    },
+    "section_rich_text_RFrWK3": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_6NKiTg": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Find the Nearest Store",
+            "text_size": 5
+          }
+        }
+      },
+      "block_order": [
+        "subheading_6NKiTg"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 26,
+        "padding_bottom": 20
+      }
+    },
+    "section_custom_code_jdJcBP": {
+      "type": "section-custom-code",
+      "settings": {
+        "code": "<!-- Start Stockist.co widget -->\n<div data-stockist-widget-tag=\"u4118\">Loading store locator\nfrom <a href=\"https:\/\/stockist.co\">Stockist store locator<\/a>...<\/div>\n<script>\n  (function(s,t,o,c,k){c=s.createElement(t);c.src=o;c.async=1;\n  k=s.getElementsByTagName(t)[0];k.parentNode.insertBefore(c,k);\n  })(document,'script','\/\/stockist.co\/embed\/v1\/widget.min.js');\n<\/script>\n<!-- End Stockist.co widget -->",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_gW8BNx": {
+      "type": "section-columns",
+      "blocks": {
+        "image_MKyRFD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/michael-m-bracelets-hex-flex-cuff-30567834812452.webp",
+            "title": "Bracellets",
+            "heading_size": 4,
+            "text": "<p>Our versatile bracelets are perfect for mixing, matching, and stacking.<\/p>",
+            "text_size": 3,
+            "button_text": "Shop Bracelets",
+            "button_url": "shopify:\/\/collections\/m-collection-bracelets",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true
+          }
+        },
+        "image_3rMpxN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/michael-m-earrings-large-chroma-gold-edge-pave-hoops-41939772670235.jpg",
+            "title": "Earrings",
+            "heading_size": 4,
+            "text": "<p>Explore studs, drops, hoops, and more.<\/p><p><\/p><p><\/p>",
+            "text_size": 3,
+            "button_text": "Shop Earrings",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true
+          }
+        },
+        "image_gnCLJA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/michael-m-necklaces-14k-yellow-gold-hex-truss-pendant-yellow-gold-40069621416219.jpg",
+            "title": "Necklaces",
+            "heading_size": 4,
+            "text": "<p>Delicate layering pieces to dazzling statement makers.<\/p>",
+            "text_size": 3,
+            "button_text": "Shop Necklaces",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true
+          }
+        },
+        "image_wCA4UQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/michael-m-fashion-rings-tetra-chevon-ring-41931401888027.jpg",
+            "title": "Rings",
+            "heading_size": 4,
+            "text": "<p>Handcrafted rings that are equally alluring alone or stacked.<\/p>",
+            "text_size": 3,
+            "button_text": "Shop Rings",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--text",
+            "show_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "image_MKyRFD",
+        "image_3rMpxN",
+        "image_gnCLJA",
+        "image_wCA4UQ"
+      ],
+      "settings": {
+        "title": "Shop by Category",
+        "heading_size": 5,
+        "align_text": "text-center",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "image_aspect_ratio": 1,
+        "mobile_image_aspect_ratio": 0.7,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 25,
+        "padding_bottom": 25,
+        "layout_mobile": "carousel"
+      }
+    },
+    "section_tab_collections_UbH6eY": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "collection_R6XTnQ": {
+          "type": "collection",
+          "settings": {
+            "title": "First collection",
+            "featured_collection": "europa-collection-1",
+            "show_image": true,
+            "align_with_product_images": false,
+            "image": "shopify:\/\/shop_images\/michael-m-bracelets-europa-bypass-cuff-30555043037220.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "Explore Europa",
+            "link": "shopify:\/\/collections\/europa-collection-1",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_R6XTnQ"
+      ],
+      "settings": {
+        "title": "Featured Collection",
+        "text": "",
+        "layout": "stacked",
+        "show_product_count": false,
+        "product_limit": 4,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "section_accordion_group_rmmxCt": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading_E7wgRU": {
+          "type": "heading",
+          "settings": {
+            "title": "FAQ"
+          }
+        },
+        "question_N97BDL": {
+          "type": "question",
+          "settings": {
+            "title": "Is engraving available for online purchases? ",
+            "content": "<p>Engraving is only available by reaching out directly to our MICHAEL M Care Team<a href=\"mailto:customer@michaelm.com\" target=\"_blank\" title=\"mailto:customer@michaelm.com\"><span style=\"text-decoration:underline\"><em>customer@michaelm.com<\/em><\/span><\/a>. One of our dedicated team members can then determine if the engraving is possible based on your choice of item, the design style, and the desired engraving. Please note that engraved items may not be returned or exchanged. <\/p>"
+          }
+        },
+        "question_gqYjiK": {
+          "type": "question",
+          "settings": {
+            "title": "Can I track my online order? ",
+            "content": "<p>A shipping notification with tracking details will be sent via email after your order has shipped. You will receive multiple email acknowledgements if your order results in more than one shipment.<\/p>"
+          }
+        },
+        "question_RGKUrc": {
+          "type": "question",
+          "settings": {
+            "title": "How long does a MICHAEL M order take to ship?  ",
+            "content": "<p>Online orders will ship within 7 business days. Custom orders will ship within 2-3 weeks.<\/p>"
+          }
+        },
+        "question_hjX6UK": {
+          "type": "question",
+          "settings": {
+            "title": "Are MICHAEL M products insured when shipped? ",
+            "content": "<p>All items shipped are <span style=\"text-decoration:underline\">FULLY INSURED<\/span> during transit; therefore, all shipments will require a signature at the time of delivery. No exceptions can be made. Please note that additional charges may accrue if additional delivery attempts are made. Please contact the MICHAEL M Care Team <a href=\"mailto:customer@michaelm.com\" target=\"_blank\" title=\"mailto:customer@michaelm.com\"><span style=\"text-decoration:underline\"><em>customer@michaelm.com <\/em><\/span><\/a>if your order details indicate the package has been delivered but nothing was received.<\/p>"
+          }
+        },
+        "question_LrCaXX": {
+          "type": "question",
+          "settings": {
+            "title": "Is engraving available for online purchases? ",
+            "content": "<p>Engraving is only available by reaching out directly to our MICHAEL M Care Team <a href=\"mailto:customer@michaelm.com\" target=\"_blank\" title=\"mailto:customer@michaelm.com\"><span style=\"text-decoration:underline\"><em>customer@michaelm.com<\/em><\/span><\/a>. One of our dedicated team members can then determine if the engraving is possible based on your choice of item, the design style, and desired engraving. Please note that engraved items may not be returned or exchanged. <\/p>"
+          }
+        },
+        "question_PkmYMG": {
+          "type": "question",
+          "settings": {
+            "title": "How can I make returns or exchanges? ",
+            "content": "<p>If for any reason you decide not to keep your online purchase, MICHAEL M will accept online merchandise in its original condition for a full refund when accompanied with original packaging - tags, boxes, bags - with no signs of wear or scratches. Refunds will be issued in the same form as was utilized for payment. All items with custom engraving are final sale.<\/p><p>The return window for online purchases is 30 days from the date of delivery. Please email your Return Request with your Order Confirmation and item you’d like to return to our MICHAEL M Care Team - <a href=\"mailto:customer@michaelm.com\" title=\"mailto:customer@michaelm.com\">customer@michaelm.com<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_E7wgRU",
+        "question_N97BDL",
+        "question_gqYjiK",
+        "question_RGKUrc",
+        "question_hjX6UK",
+        "question_LrCaXX",
+        "question_PkmYMG"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_recent_products_ibYdNU": {
+      "type": "section-recent-products",
+      "settings": {
+        "product_recently_heading": "Recently viewed",
+        "product_recently_limit": 6,
+        "product_recently_minimum": 4,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "section_custom_content_88JFLe",
+    "main",
+    "section_collection_ULaFHU",
+    "section_rich_text_RFrWK3",
+    "section_custom_code_jdJcBP",
+    "section_columns_gW8BNx",
+    "section_tab_collections_UbH6eY",
+    "section_accordion_group_rmmxCt",
+    "section_recent_products_ibYdNU"
+  ]
+}

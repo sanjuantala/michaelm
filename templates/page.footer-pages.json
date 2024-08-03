@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "subheading": "",
+        "subheading_size": 6,
+        "show_title": true,
+        "heading_size": 6,
+        "show_content": true,
+        "text_size": 3,
+        "align_text": "text-left",
+        "width": "wrapper--narrow",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

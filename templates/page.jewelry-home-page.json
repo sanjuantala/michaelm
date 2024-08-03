@@ -1,0 +1,455 @@
+{
+  "sections": {
+    "section_hero_Thbw9y": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_TdHeFw": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "heading_size": 11
+          }
+        }
+      },
+      "block_order": [
+        "heading_TdHeFw"
+      ],
+      "settings": {
+        "height": "screen-height-three-quarters",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Fine_Jewelry_Banner_1c55b4e8-64b0-4418-8ef0-60a1b35aa1ac.jpg",
+        "img-link": "",
+        "mobile_height": "screen-height-one-third--mobile",
+        "flex_align": "align--middle-center",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#ffffff"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "subheading_size": 6,
+        "show_title": false,
+        "heading_size": 8,
+        "show_content": true,
+        "text_size": 4,
+        "align_text": "text-left",
+        "width": "wrapper--full-padded",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 26,
+        "padding_bottom": 50
+      }
+    },
+    "section_collection_7UrB8c": {
+      "type": "section-collection",
+      "settings": {
+        "heading": "New Arrivals",
+        "description": "",
+        "layout": "inline",
+        "link_text": "Explore Now",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "btn--small",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "featured_collection": "new-arrivals-f",
+        "style": "slider",
+        "grid": 5,
+        "rows": 5,
+        "layout_mobile": "carousel",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_tab_collections_QKxPPa": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "collection_3t93Cz": {
+          "type": "collection",
+          "settings": {
+            "title": "Bracelets",
+            "featured_collection": "m-collection-bracelets",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        },
+        "collection_nrk6aA": {
+          "type": "collection",
+          "settings": {
+            "title": "Earrings",
+            "featured_collection": "m-collection-earrings",
+            "show_image": true,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        },
+        "collection_fR6k6b": {
+          "type": "collection",
+          "settings": {
+            "title": "Necklaces",
+            "featured_collection": "m-collection-necklaces",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        },
+        "collection_d3iDEB": {
+          "type": "collection",
+          "settings": {
+            "title": "Rings",
+            "featured_collection": "rings",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_3t93Cz",
+        "collection_nrk6aA",
+        "collection_fR6k6b",
+        "collection_d3iDEB"
+      ],
+      "settings": {
+        "title": "Shop by Category",
+        "text": "",
+        "layout": "stacked",
+        "show_product_count": false,
+        "product_limit": 6,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "section_collections_list_YL9Lhm": {
+      "type": "section-collections-list",
+      "blocks": {
+        "collection_JCyiLK": {
+          "type": "collection",
+          "settings": {
+            "collection": "link",
+            "collection_image": "shopify:\/\/shop_images\/Photoroom_20240611_120714.jpg",
+            "title": "LINK"
+          }
+        },
+        "collection_YtbXDz": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "collection_image": "shopify:\/\/shop_images\/Photoroom_20240611_121612.jpg",
+            "title": "TETRA"
+          }
+        },
+        "collection_jeLXqp": {
+          "type": "collection",
+          "settings": {
+            "collection": "orb-collection",
+            "collection_image": "shopify:\/\/shop_images\/Photoroom_20240611_120927.jpg",
+            "title": ""
+          }
+        },
+        "collection_pq8gWp": {
+          "type": "collection",
+          "settings": {
+            "collection": "chroma-gold",
+            "collection_image": "shopify:\/\/shop_images\/Photoroom_20240611_123711.jpg",
+            "title": ""
+          }
+        },
+        "collection_MjzxDU": {
+          "type": "collection",
+          "settings": {
+            "collection": "octave",
+            "collection_image": "shopify:\/\/shop_images\/Photoroom_20240611_124047.jpg",
+            "title": ""
+          }
+        },
+        "collection_wqhyJg": {
+          "type": "collection",
+          "settings": {
+            "collection": "cloud",
+            "collection_image": "shopify:\/\/shop_images\/Photoroom_20240611_121828.jpg",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_JCyiLK",
+        "collection_YtbXDz",
+        "collection_jeLXqp",
+        "collection_pq8gWp",
+        "collection_MjzxDU",
+        "collection_wqhyJg"
+      ],
+      "settings": {
+        "title": "Shop by Collection",
+        "description": "",
+        "layout": "grid",
+        "aspect_ratio": 1,
+        "grid": 2,
+        "layout_mobile": "1",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 45,
+        "padding_bottom": 88
+      }
+    },
+    "003fcc50-9301-4178-835c-817b997a9825": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-0": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "text_size": 1
+          }
+        },
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-1": {
+          "type": "heading",
+          "settings": {
+            "title": "THE MICHAEL M DIFFERENCE",
+            "text_size": 5
+          }
+        },
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It’s how we hand set every diamond and how every prong is meticulously drilled. It’s in each loupe we look through and every unique design we balance. Blending timeless European style with future facing sustainable craftsmanship, every<br\/>MICHAEL M customizable engagement ring, wedding band and fashion jewelry piece is made with superior quality and attention to every detail. It’s in the transformation of rarity into magnificence reflecting decades of integrity and dedication.<br\/>An American legacy in the making. Sustainably sourced. Always handcrafted.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-0",
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-1",
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-2"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d": {
+      "type": "section-double",
+      "blocks": {
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-0": {
+          "type": "heading",
+          "settings": {
+            "title": "MADE TO LAST A LIFETIME",
+            "text_size": 4
+          }
+        },
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Crafted using only the finest quality materials - 14k, 18k and platinum that we alloy in-house - and diamonds that are hand selected and set with perfectly level tables. Every piece of MM jewelry is backed by a lifetime warranty against manufacturer defect and accompanied by an authenticity card.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body"
+          }
+        },
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-2": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-0",
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-1",
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-2"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/MM_GRAD_SET_05_BRIDAL_R800_STILL.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "78fb3602-e2ad-45f6-8ebd-9358f8ed2f76": {
+      "type": "section-double",
+      "blocks": {
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-0": {
+          "type": "heading",
+          "settings": {
+            "title": "ETHICALLY SOURCED",
+            "text_size": 5
+          }
+        },
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All our materials are ethically sourced from suppliers who follow conflict-free practices. MM is committed to complying with best practices in regards to ethics, human rights, social responsibility and protection of the environment.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body"
+          }
+        },
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-2": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-0",
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-1",
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-2"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/MM_GRAD_SET_08_BRIDAL_R_802_3_B_1_2.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_accordion_group_DWMjM6": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading_rLFmgc": {
+          "type": "heading",
+          "settings": {
+            "title": "FAQ"
+          }
+        },
+        "question_3JFbY8": {
+          "type": "question",
+          "settings": {
+            "title": "How long does a MICHAEL M order take to ship?  ",
+            "content": "<p>Online orders will ship within 7 business days. Custom orders will ship within 2-3 weeks.<\/p>"
+          }
+        },
+        "question_tyNB3W": {
+          "type": "question",
+          "settings": {
+            "title": "Are MICHAEL M products insured when shipped? ",
+            "content": "<p>All items shipped are <span style=\"text-decoration:underline\">FULLY INSURED<\/span> during transit; therefore, all shipments will require a signature at the time of delivery. No exceptions can be made. Please note that additional charges may accrue if additional delivery attempts are made. Please contact the MICHAEL M Care Team <a href=\"mailto:customer@michaelm.com\" target=\"_blank\" title=\"mailto:customer@michaelm.com\"><span style=\"text-decoration:underline\"><em>customer@michaelm.com <\/em><\/span><\/a>if your order details indicate the package has been delivered but nothing was received.<\/p>"
+          }
+        },
+        "question_BhX3fc": {
+          "type": "question",
+          "settings": {
+            "title": "How can I find out if an item sold online is available at my local store? ",
+            "content": "<p>When viewing a product on online, you can click “Store Locator” and input your location to search for your closest MICHAEL M retail partner. If the store does not carry the item, the store can request MICHAEL M send the item if it is in stock. Please note that the availability of products is subject to change. <\/p>"
+          }
+        },
+        "question_qw4MHg": {
+          "type": "question",
+          "settings": {
+            "title": "Does my engagement ring come with a Lifetime Warranty? ",
+            "content": "<p>The MICHAEL M Commitment to Service is a Lifetime Warranty that ensures the proper care & repair of your MICHAEL M jewelry. Maintenance and repairs of imperfections from the manufacturer will be done free of charge, but must be done by an authorized MICHAEL M retailer. If these conditions are not met, the MICHAEL M lifetime warranty will be void.<\/p>"
+          }
+        },
+        "question_Hx7HpA": {
+          "type": "question",
+          "settings": {
+            "title": "Can I upgrade my MICHAEL M jewelry? ",
+            "content": "<p>Yes, as part of our commitment to the quality of our diamonds, MICHAEL M allows you to upgrade your original MICHAEL M item at any time. Upon review, you will receive a credit up to 75% of the original purchase price, which can be used toward the purchase of a new MICHAEL M item (1:1 trade only). Please note, the retail price of the new item must be of greater or equal value than the original purchase price. Damaged or blemished engagement rings will not receive full credit. Visit a MICHAEL M retail partner near you to learn more about the MICHAEL M Trade Up Policy.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rLFmgc",
+        "question_3JFbY8",
+        "question_tyNB3W",
+        "question_BhX3fc",
+        "question_qw4MHg",
+        "question_Hx7HpA"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "section_hero_Thbw9y",
+    "main",
+    "section_collection_7UrB8c",
+    "section_tab_collections_QKxPPa",
+    "section_collections_list_YL9Lhm",
+    "003fcc50-9301-4178-835c-817b997a9825",
+    "44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d",
+    "78fb3602-e2ad-45f6-8ebd-9358f8ed2f76",
+    "section_accordion_group_DWMjM6"
+  ]
+}

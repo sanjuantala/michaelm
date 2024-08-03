@@ -1,0 +1,234 @@
+{
+  "sections": {
+    "003fcc50-9301-4178-835c-817b997a9825": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-0": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "text_size": 3
+          }
+        },
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-1": {
+          "type": "heading",
+          "settings": {
+            "title": "OUR STORY",
+            "text_size": 8
+          }
+        },
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-2": {
+          "type": "text",
+          "settings": {
+            "text": "<h1><\/h1><p>Founded in 2008, MICHAEL M is a premier bridal and fashion jewelry house intent on setting new standards in American luxury jewelry. With an elite league of skilled artisans handcrafting each piece and hand setting every diamond in our Los Angeles atelier, our vision is to create the highest quality, responsibly sourced pieces designed to reinvent fine jewelry.<br\/><br\/>We believe every piece has a story to tell, and should be passed down from generation to generation.<br\/>We’re honored that MICHAEL M is part of so many of your storie<\/p>",
+            "text_size": 4,
+            "text_style": "font-body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-0",
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-1",
+        "template--19015464255771__003fcc50-9301-4178-835c-817b997a9825-1684883819296ca298-2"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": false,
+        "heading_size": 8,
+        "show_content": true,
+        "text_size": 4,
+        "align_text": "text-left",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d": {
+      "type": "section-double",
+      "blocks": {
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-0": {
+          "type": "heading",
+          "settings": {
+            "title": "MADE TO LAST A LIFETIME",
+            "text_size": 4
+          }
+        },
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Crafted using only the finest quality materials - 14k, 18k and platinum that we alloy in-house - and diamonds that are hand selected and set with perfectly level tables. Every piece of MM jewelry is backed by a lifetime warranty against manufacturer defect and accompanied by an authenticity card.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body"
+          }
+        },
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-2": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-0",
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-1",
+        "template--19015464255771__44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d-168488370540c47561-2"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/MM_GRAD_SET_02_ORB_RIBBED_RING_STILL_ca6fd0af-3439-47aa-85d1-92559bebd3cc.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "78fb3602-e2ad-45f6-8ebd-9358f8ed2f76": {
+      "type": "section-double",
+      "blocks": {
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Image with text",
+            "text_size": 8
+          }
+        },
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body"
+          }
+        },
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-2": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-0",
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-1",
+        "template--19015464255771__78fb3602-e2ad-45f6-8ebd-9358f8ed2f76-168488370540c47561-2"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "88cf7463-9f28-49ca-8860-0e7bc4f72fef": {
+      "type": "section-columns",
+      "blocks": {
+        "template--19015464255771__88cf7463-9f28-49ca-8860-0e7bc4f72fef-16850546661dd28ff1-0": {
+          "type": "image",
+          "settings": {
+            "title": "Add a title or tagline",
+            "heading_size": 4,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 3,
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "template--19015464255771__88cf7463-9f28-49ca-8860-0e7bc4f72fef-16850546661dd28ff1-1": {
+          "type": "image",
+          "settings": {
+            "title": "Add a title or tagline",
+            "heading_size": 4,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 3,
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "template--19015464255771__88cf7463-9f28-49ca-8860-0e7bc4f72fef-16850546661dd28ff1-2": {
+          "type": "image",
+          "settings": {
+            "title": "Add a title or tagline",
+            "heading_size": 4,
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "text_size": 3,
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19015464255771__88cf7463-9f28-49ca-8860-0e7bc4f72fef-16850546661dd28ff1-0",
+        "template--19015464255771__88cf7463-9f28-49ca-8860-0e7bc4f72fef-16850546661dd28ff1-1",
+        "template--19015464255771__88cf7463-9f28-49ca-8860-0e7bc4f72fef-16850546661dd28ff1-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 5,
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "image_aspect_ratio": 0.7,
+        "mobile_image_aspect_ratio": 0.7,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "carousel"
+      }
+    }
+  },
+  "order": [
+    "003fcc50-9301-4178-835c-817b997a9825",
+    "main",
+    "44385cc4-5bdb-4a2a-9f0e-792cec3b9b5d",
+    "78fb3602-e2ad-45f6-8ebd-9358f8ed2f76",
+    "88cf7463-9f28-49ca-8860-0e7bc4f72fef"
+  ]
+}

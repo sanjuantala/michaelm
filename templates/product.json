@@ -1,0 +1,422 @@
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "breadcrumb",
+            "show_rating": false,
+            "enable_star_rating": false,
+            "show_rating_count": false,
+            "padding_bottom": 8
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "padding_bottom": 16
+          }
+        },
+        "variants": {
+          "type": "variants",
+          "settings": {
+            "info_page": "",
+            "subscriptions_enable_selectors": false,
+            "padding_bottom": 16
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": false,
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "padding_bottom": 32
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "disabled": true,
+          "settings": {
+            "padding_bottom": 32
+          }
+        },
+        "tabs": {
+          "type": "tab_richtext",
+          "settings": {
+            "show_read_more": false,
+            "style": "accordions",
+            "title_1": "CARE",
+            "raw_content_1": "<p>Use a soft cloth to gently wipe clean, then remove any remaining impurities with mild diluted soap. Rinse with warm water and dry thoroughly before storing in the provided jewelry pouch. Do not use abrasive cleaners, steamers or ultrasonic machines.<\/p>",
+            "title_2": "Sizing",
+            "raw_content_2": "<p>Please note certain styles may increase in price due to size and design elements. Refer to the drop-down for the exact pricing for each style. For pricing on additional sizes reach out to us at customer@michaelm.com, or visit one of our Authorized Retailers.<\/p>",
+            "title_3": "",
+            "raw_content_3": "",
+            "title_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 0
+          }
+        },
+        "icon_1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-fast-shipment",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Complimentary Shipping & Returns",
+            "width": "full",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variants",
+        "buttons",
+        "pickup",
+        "tabs",
+        "icon_1"
+      ],
+      "settings": {
+        "product_sticky_enable": true,
+        "image_layout": "grid-2",
+        "image_size": "stretch",
+        "show_cart_bar": true,
+        "enable_zoom": true,
+        "enable_video_looping": true,
+        "mobile_image_style": "thumbs",
+        "padding_top": 90,
+        "padding_bottom": 30
+      }
+    },
+    "related": {
+      "type": "related",
+      "blocks": {
+        "related": {
+          "type": "related",
+          "settings": {
+            "product_recommendations_heading": "Related products",
+            "limit": 4
+          }
+        },
+        "recent": {
+          "type": "recent",
+          "settings": {
+            "product_recently_heading": "Recently viewed",
+            "product_recently_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "related",
+        "recent"
+      ],
+      "settings": {
+        "enable_tabs": true,
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    },
+    "faq": {
+      "type": "section-accordion",
+      "blocks": {
+        "faq-1": {
+          "type": "text",
+          "settings": {
+            "title": "Can I track my online order? ",
+            "text": "<p>A shipping notification with tracking details will be sent via email after your order has shipped. You will receive multiple email acknowledgements if your order results in more than one shipment.<\/p>"
+          }
+        },
+        "faq-2": {
+          "type": "text",
+          "settings": {
+            "title": "Can I ship my order to an international location? ",
+            "text": "<p>Currently, we are only able to accept online orders to shipping addresses within the United States. Unfortunately, we are unable to ship online orders to APO, FPO, DPO, and PO Boxes.<\/p>"
+          }
+        },
+        "faq-3": {
+          "type": "text",
+          "settings": {
+            "title": "How long does a MICHAEL M order take to ship?  ",
+            "text": "<p>Online orders will ship within 7 business days. Custom orders will ship within 2-3 weeks.<\/p>"
+          }
+        },
+        "faq-4": {
+          "type": "text",
+          "settings": {
+            "title": "Are MICHAEL M products insured when shipped? ",
+            "text": "<p>All items shipped are <span style=\"text-decoration:underline\">FULLY INSURED<\/span> during transit; therefore, all shipments will require a signature at the time of delivery. No exceptions can be made. Please note that additional charges may accrue if additional delivery attempts are made. Please contact the MICHAEL M Care Team <a href=\"mailto:customer@michaelm.com\" target=\"_blank\" title=\"mailto:customer@michaelm.com\"><span style=\"text-decoration:underline\"><em>customer@michaelm.com <\/em><\/span><\/a>if your order details indicate the package has been delivered but nothing was received.<\/p>"
+          }
+        },
+        "9ffd96ff-5ace-4738-930c-78ef927b1ec1": {
+          "type": "text",
+          "settings": {
+            "title": "How can I find out if an item sold online is available at my local store? ",
+            "text": "<p>When viewing a product on online, you can click “Store Locator” and input your location to search for your closest MICHAEL M retail partner. If the store does not carry the item, the store can request MICHAEL M send the item if it is in stock. Please note that the availability of products is subject to change. <\/p>"
+          }
+        },
+        "ee6adf25-b7af-40ee-b8e6-6e9bce037840": {
+          "type": "text",
+          "settings": {
+            "title": "How do I care for my jewelry? ",
+            "text": "<p>Use a soft cloth to gently wipe clean, then remove any remaining impurities with mild diluted soap. Rinse with warm water and dry thoroughly before storing in the provided jewelry pouch. Do not use abrasive cleaners, steamers or ultrasonic machines. <\/p><p>As part of our dedication to customers, we offer complimentary services including, cleaning and engraving touch-up. MICHAEL M does reserve the sole discretion to determine the services provided, subject to change. <\/p>"
+          }
+        },
+        "b42dea32-dacc-4d41-8821-bc759900b04c": {
+          "type": "text",
+          "settings": {
+            "title": "How can I get an item repaired? ",
+            "text": "<p>At any of our retail partner stores, you will find trained sales associates who are happy to help you send your piece in for repair. You can find your nearest retailer by clicking “Locate a Retailer” and input your location to search for your closest MICHAEL M retail partner.<\/p>"
+          }
+        },
+        "89f9e812-0819-47dc-b1c5-90e445e52e74": {
+          "type": "text",
+          "settings": {
+            "title": "Is engraving available for online purchases? ",
+            "text": "<p>Engraving is only available by reaching out directly to our MICHAEL M Care Team <a href=\"mailto:customer@michaelm.com\" target=\"_blank\" title=\"mailto:customer@michaelm.com\"><span style=\"text-decoration:underline\"><em>customer@michaelm.com<\/em><\/span><\/a>. One of our dedicated team members can then determine if the engraving is possible based on your choice of item, the design style, and desired engraving. Please note that engraved items may not be returned or exchanged. <\/p>"
+          }
+        },
+        "b5db1037-e760-4b38-a5e3-67d1b9227bb4": {
+          "type": "text",
+          "settings": {
+            "title": "Does my engagement ring come with a Lifetime Warranty? ",
+            "text": "<p>The MICHAEL M Commitment to Service is a Lifetime Warranty that ensures the proper care & repair of your MICHAEL M jewelry. Maintenance and repairs of imperfections from the manufacturer will be done free of charge, but must be done by an authorized MICHAEL M retailer. If these conditions are not met, the MICHAEL M lifetime warranty will be void.<\/p>"
+          }
+        },
+        "4a9106a8-8cc8-4f2c-b17e-1c2a4e5fe615": {
+          "type": "text",
+          "settings": {
+            "title": "Can I upgrade my MICHAEL M jewelry? ",
+            "text": "<p>Yes, as part of our commitment to the quality of our diamonds, MICHAEL M allows you to upgrade your original MICHAEL M item at any time. Upon review, you will receive a credit up to 75% of the original purchase price, which can be used toward the purchase of a new MICHAEL M item (1:1 trade only). Please note, the retail price of the new item must be of greater or equal value than the original purchase price. Damaged or blemished engagement rings will not receive full credit. Visit a MICHAEL M retail partner near you to learn more about the MICHAEL M Trade Up Policy.<\/p>"
+          }
+        },
+        "3b920eea-9df8-4eb0-8668-ccc6bb7d4744": {
+          "type": "text",
+          "settings": {
+            "title": "How can I make returns or exchanges? ",
+            "text": "<p>If for any reason you decide not to keep your online purchase, MICHAEL M will accept online merchandise in its original condition for a full refund when accompanied with original packaging - tags, boxes, bags - with no signs of wear or scratches. Refunds will be issued in the same form as was utilized for payment. All items with custom engraving are final sale.<\/p><p>The return window for online purchases is 30 days from the date of delivery. Please email your Return Request with your Order Confirmation and item you’d like to return to our MICHAEL M Care Team - <a href=\"mailto:customer@michaelm.com\" title=\"mailto:customer@michaelm.com\">customer@michaelm.com<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4",
+        "9ffd96ff-5ace-4738-930c-78ef927b1ec1",
+        "ee6adf25-b7af-40ee-b8e6-6e9bce037840",
+        "b42dea32-dacc-4d41-8821-bc759900b04c",
+        "89f9e812-0819-47dc-b1c5-90e445e52e74",
+        "b5db1037-e760-4b38-a5e3-67d1b9227bb4",
+        "4a9106a8-8cc8-4f2c-b17e-1c2a4e5fe615",
+        "3b920eea-9df8-4eb0-8668-ccc6bb7d4744"
+      ],
+      "settings": {
+        "title": "FAQ",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    },
+    "about": {
+      "type": "section-accordion",
+      "blocks": {
+        "about-0": {
+          "type": "image",
+          "settings": {
+            "title": "FAMILY OWNED & OPERATED",
+            "text": "<p>MICHAEL M is built on family heritage and fine craftsmanship. Generations of commitment to handcrafted sustainability.<\/p>",
+            "image": "shopify:\/\/shop_images\/MichaelM-127_4.jpg",
+            "aspect_ratio": 0.6
+          }
+        },
+        "about-1": {
+          "type": "image",
+          "settings": {
+            "title": "MADE-TO-ORDER",
+            "text": "<p>Every MICHAEL M piece is individually handcrafted, hand drilled and hand set in our ateliers. Our rings take 2-3 weeks to make and up to 20 hours of diamond hand setting.<\/p>",
+            "image": "shopify:\/\/shop_images\/MichaelM-220_2.jpg",
+            "aspect_ratio": 0.6
+          }
+        },
+        "about-2": {
+          "type": "image",
+          "settings": {
+            "title": "LIFETIME WARRANTY",
+            "text": "<p>Every piece of MM jewelry is backed by a lifetime warranty against manufacturer defect with a certificate of authenticity.<\/p>",
+            "image": "shopify:\/\/shop_images\/MichaelM-286_2.jpg",
+            "aspect_ratio": 0.6
+          }
+        }
+      },
+      "block_order": [
+        "about-0",
+        "about-1",
+        "about-2"
+      ],
+      "settings": {
+        "title": "ABOUT US",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "reviews": {
+      "type": "reviews",
+      "settings": {
+        "enable_product_reviews": false,
+        "enable_accordion": true,
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "custom": {
+      "type": "section-custom-content",
+      "blocks": {
+        "custom-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16_9_Wedding_band_1.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#ffffff",
+            "show_overlay_text": true,
+            "title": "",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "custom-1": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 1,
+            "title": "THE MICHAEL M DIFFERENCE",
+            "heading_size": 4,
+            "text": "<p>It’s how we hand set every diamond and how every prong is meticulously drilled. It’s in each loupe we look through and every unique design we balance. Blending timeless European style with future facing sustainable craftsmanship, every<br\/>MICHAEL M customizable engagement ring, wedding band and fashion jewelry piece is made with superior quality and attention to every detail. It’s in the transformation of rarity into magnificence reflecting decades of integrity and dedication.<br\/>An American legacy in the making. Sustainably sourced. Always handcrafted.<\/p>",
+            "text_size": 4,
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/our-story",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#f7f7f7",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom-0",
+        "custom-1"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full-padded",
+        "borders": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "imgtxt": {
+      "type": "section-custom-content",
+      "blocks": {
+        "imgtxt-0": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 4,
+            "title": "ETHICALLY SOURCED",
+            "heading_size": 4,
+            "text": "<p>All our materials are ethically sourced from suppliers who follow conflict-free practices. MM is committed to complying with best practices in regards to ethics, human rights, social responsibility and protection of the environment.<\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#f7f7f7",
+            "color": ""
+          }
+        },
+        "imgtxt-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_1_3.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": true,
+            "title": "",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "imgtxt-0",
+        "imgtxt-1"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full-padded",
+        "borders": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related",
+    "faq",
+    "about",
+    "reviews",
+    "custom",
+    "imgtxt"
+  ]
+}

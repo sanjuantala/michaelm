@@ -1,0 +1,492 @@
+{
+  "sections": {
+    "a7eb8b1e-024f-46be-8fa9-08bdaaca67c4": {
+      "type": "section-video",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/230526_04_MM_SP23_EDIT_R2_(Copy).mp4",
+        "show_video_popup": false,
+        "video_popup_social": "",
+        "desktop_height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": true,
+        "title": "",
+        "heading_size": 8,
+        "description": "",
+        "text_size": 3,
+        "flex_align": "align--middle-center",
+        "bg_color": "",
+        "color": "#ffffff",
+        "link_text": "",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false
+      }
+    },
+    "featured-collection": {
+      "type": "section-collection",
+      "settings": {
+        "heading": "",
+        "description": "",
+        "layout": "center",
+        "link_text": "",
+        "link_url": "shopify:\/\/collections\/new-arrivals-b",
+        "button_type": "btn--primary",
+        "button_size": "btn--small",
+        "button_style": "btn--solid",
+        "show_arrow": true,
+        "featured_collection": "new-arrivals-f",
+        "style": "slider",
+        "grid": 4,
+        "rows": 1,
+        "layout_mobile": "carousel",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "95e0fd35-0d0f-4996-a962-5da82af47437": {
+      "type": "section-double",
+      "blocks": {
+        "template--19015464157467__95e0fd35-0d0f-4996-a962-5da82af47437-1684880627f175fc3c-0": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "text_size": 8
+          }
+        },
+        "template--19015464157467__95e0fd35-0d0f-4996-a962-5da82af47437-1684880627f175fc3c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Jewelry Collections feature 14K diamond jewelry handcrafted for everyday wear—now available online and select boutiques. An exclusive selection of curated styles, all made to order and delivered directly to you. From diamond rings to diamond earrings and necklaces—we created everyday designs that help you shine.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body"
+          }
+        },
+        "template--19015464157467__95e0fd35-0d0f-4996-a962-5da82af47437-1684880627f175fc3c-2": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "View more",
+            "button_url": "shopify:\/\/collections\/jewelry",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19015464157467__95e0fd35-0d0f-4996-a962-5da82af47437-1684880627f175fc3c-0",
+        "template--19015464157467__95e0fd35-0d0f-4996-a962-5da82af47437-1684880627f175fc3c-1",
+        "template--19015464157467__95e0fd35-0d0f-4996-a962-5da82af47437-1684880627f175fc3c-2"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/MM_GRAD_SET_08_BRIDAL_R_802_3_B_1_2.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "tabs": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "42f4d7d4-db00-4457-b133-e9c5c46b4c9e": {
+          "type": "collection",
+          "settings": {
+            "title": "ENGAGEMENT ",
+            "featured_collection": "engagement",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        },
+        "tabs-0": {
+          "type": "collection",
+          "settings": {
+            "title": "BRACELETS",
+            "featured_collection": "m-collection-bracelets",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        },
+        "tabs-1": {
+          "type": "collection",
+          "settings": {
+            "title": "EARRINGS",
+            "featured_collection": "m-collection-earrings",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        },
+        "9ea560b8-562c-465c-b2ab-2b933e5187c0": {
+          "type": "collection",
+          "settings": {
+            "title": "NECKLACES",
+            "featured_collection": "m-collection-necklaces",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        },
+        "347905e0-f974-4cd8-aac5-fecf620010e2": {
+          "type": "collection",
+          "settings": {
+            "title": "RINGS",
+            "featured_collection": "rings",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View products",
+            "link": "",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "42f4d7d4-db00-4457-b133-e9c5c46b4c9e",
+        "tabs-0",
+        "tabs-1",
+        "9ea560b8-562c-465c-b2ab-2b933e5187c0",
+        "347905e0-f974-4cd8-aac5-fecf620010e2"
+      ],
+      "settings": {
+        "title": "VIEW BY CATEGORY",
+        "text": "<p>Brilliant design and unparalleled craftsmanship.<\/p>",
+        "layout": "stacked",
+        "show_product_count": false,
+        "product_limit": 6,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "d6a6e47e-c669-4e75-830c-614c4fcd0d3b": {
+      "type": "section-double",
+      "blocks": {
+        "a70f6227-6ec5-45c2-9cba-fb1b2546a252": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "text_size": 8
+          }
+        },
+        "5494afaf-57cd-412a-a4d9-a0df30df4222": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Known for our expert craftsmanship and European-style designs, let MICHAEL M take you on the journey of a lifetime in creating the ring of your dreams. Every creation in our studio is perfectly handcrafted to reflect your personal taste. Your love story is one of a kind—so should your ring.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body"
+          }
+        },
+        "c237211e-8267-4dc8-ad7e-8f7c9a97a40c": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "View Engagement",
+            "button_url": "shopify:\/\/collections\/engagement",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "a70f6227-6ec5-45c2-9cba-fb1b2546a252",
+        "5494afaf-57cd-412a-a4d9-a0df30df4222",
+        "c237211e-8267-4dc8-ad7e-8f7c9a97a40c"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-third--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/2_3.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "logos": {
+      "type": "section-press-logos",
+      "blocks": {
+        "logos-0": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Town___Country__magazine_-Logo.wine.png",
+            "logo_width": 180,
+            "link": "",
+            "description": "<h4>AS SEEN IN...<\/h4>",
+            "heading_size": 1
+          }
+        },
+        "logos-1": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/2880px-Logo_InStyle_1.png",
+            "logo_width": 130,
+            "link": "",
+            "description": "<h4>AS SEEN IN...<\/h4>",
+            "heading_size": 1
+          }
+        },
+        "logos-2": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Harper_s_Bazaar_Logo_svg.png",
+            "logo_width": 110,
+            "link": "",
+            "description": "<h4>AS SEEN IN...<\/h4>",
+            "heading_size": 1
+          }
+        },
+        "7a772d55-12ac-4afe-aa02-a769ec278a03": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Martha-Stewart-Wedding-logo_1.png",
+            "logo_width": 180,
+            "link": "",
+            "description": "<h4>AS SEEN IN...<\/h4>",
+            "heading_size": 1
+          }
+        }
+      },
+      "block_order": [
+        "logos-0",
+        "logos-1",
+        "logos-2",
+        "7a772d55-12ac-4afe-aa02-a769ec278a03"
+      ],
+      "settings": {
+        "title": "",
+        "enable_heading_slider": true,
+        "text_style": "font-heading",
+        "logo_opacity": 60,
+        "bg_color": "#ffffff",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "9ca78706-28db-478e-928f-705cfc5bd142": {
+      "type": "section-look",
+      "blocks": {
+        "template--19015464157467__9ca78706-28db-478e-928f-705cfc5bd142-16849584770a44ca4d-0": {
+          "type": "product",
+          "settings": {
+            "product": "cloud-drop-earrings",
+            "position_x": 65,
+            "position_y": 54
+          }
+        },
+        "template--19015464157467__9ca78706-28db-478e-928f-705cfc5bd142-16849584770a44ca4d-1": {
+          "type": "product",
+          "settings": {
+            "product": "cloud-small-pendant",
+            "position_x": 44,
+            "position_y": 77
+          }
+        },
+        "59c00bcd-217c-45e1-8101-92aa931ecf1a": {
+          "type": "product",
+          "settings": {
+            "product": "cloud-infinity-ring",
+            "position_x": 27,
+            "position_y": 61
+          }
+        },
+        "e363df98-ed37-440b-be0b-d84f63fc3c9c": {
+          "type": "product",
+          "settings": {
+            "product": "cloud-infinity-bracelet",
+            "position_x": 31,
+            "position_y": 87
+          }
+        },
+        "f41d7f78-7e7c-4215-917d-6e5ad3a819df": {
+          "type": "product",
+          "settings": {
+            "product": "r795sb",
+            "position_x": 13,
+            "position_y": 65
+          }
+        },
+        "a263cab2-376d-41ef-a27b-080b294fed38": {
+          "type": "product",
+          "settings": {
+            "product": "crown-r795s-3",
+            "position_x": 22,
+            "position_y": 62
+          }
+        }
+      },
+      "block_order": [
+        "template--19015464157467__9ca78706-28db-478e-928f-705cfc5bd142-16849584770a44ca4d-0",
+        "template--19015464157467__9ca78706-28db-478e-928f-705cfc5bd142-16849584770a44ca4d-1",
+        "59c00bcd-217c-45e1-8101-92aa931ecf1a",
+        "e363df98-ed37-440b-be0b-d84f63fc3c9c",
+        "f41d7f78-7e7c-4215-917d-6e5ad3a819df",
+        "a263cab2-376d-41ef-a27b-080b294fed38"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ECOMMERCE_LIFESTYLE_01_1642_1.jpg",
+        "title": "Shop the look",
+        "show_dots": false,
+        "products_per_row": "2",
+        "enable_aspect_ratio": true,
+        "image_aspect_ratio": 1.2,
+        "button_type": "btn--white",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "bg_color": "",
+        "color": "",
+        "dot_color": "",
+        "dot_background": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "icons": {
+      "type": "section-text-row",
+      "blocks": {
+        "80cd584f-2594-423e-9654-bda31f74d0e9": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-donation",
+            "icon_size": 30,
+            "icon_color": "#ab8c52",
+            "title": "ETHICALLY SOURCED",
+            "heading_size": 3,
+            "text": "<p>We are committed to complying with best practices in regards to ethics, human rights, social responsibility and protection of the environment.<\/p>",
+            "text_size": 3
+          }
+        },
+        "icon-0": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-gift",
+            "icon_size": 30,
+            "icon_color": "#ab8c52",
+            "title": "COMPLIMENTARY DELIVERY",
+            "heading_size": 3,
+            "text": "<p>We offer complimentary shipping and returns for all MICHAEL M online orders.<\/p><p><\/p>",
+            "text_size": 3
+          }
+        },
+        "icon-1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-planet",
+            "icon_size": 30,
+            "icon_color": "#ab8c52",
+            "title": "MADE TO ORDER",
+            "heading_size": 3,
+            "text": "<p>Each ring can be customized to meet your desired look. Your ring, your way.<\/p><p><\/p>",
+            "text_size": 3
+          }
+        },
+        "icon-2": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_size": 30,
+            "icon_color": "#ab8c52",
+            "title": "MM AT YOUR SERVICE",
+            "heading_size": 3,
+            "text": "<p>Our Brand<br\/>Concierge team is always here to help.<\/p><p><\/p>",
+            "text_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "80cd584f-2594-423e-9654-bda31f74d0e9",
+        "icon-0",
+        "icon-1",
+        "icon-2"
+      ],
+      "settings": {
+        "title": "THE MICHAEL M EXPERIENCE",
+        "heading_size": 4,
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#fafafa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "carousel"
+      }
+    }
+  },
+  "order": [
+    "a7eb8b1e-024f-46be-8fa9-08bdaaca67c4",
+    "featured-collection",
+    "95e0fd35-0d0f-4996-a962-5da82af47437",
+    "tabs",
+    "d6a6e47e-c669-4e75-830c-614c4fcd0d3b",
+    "logos",
+    "9ca78706-28db-478e-928f-705cfc5bd142",
+    "icons"
+  ]
+}
