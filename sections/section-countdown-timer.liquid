@@ -188,6 +188,8 @@
           end_date: section.settings.end_date,
           end_time: section.settings.end_time,
           period: section.settings.period,
+          digits_size_desktop: section.settings.digits_size,
+          digits_size_mobile: section.settings.digits_size_mobile,
           text_size_desktop: section.settings.text_size,
           text_size_mobile: section.settings.text_size_mobile,
           end_message: section.settings.end_message,
@@ -245,12 +247,21 @@
       },
       {
         "type": "range",
-        "id": "text_size",
+        "id": "digits_size",
         "label": "Digits size",
         "min": 1,
         "max": 15,
         "step": 1,
         "default": 12
+      },
+      {
+        "type": "range",
+        "id": "text_size",
+        "label": "Date size",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "default": 2
       },
       {
         "type": "header",
@@ -376,12 +387,21 @@
       },
       {
         "type": "range",
-        "id": "text_size_mobile",
+        "id": "digits_size_mobile",
         "label": "Digits size",
         "min": 1,
         "max": 15,
         "step": 1,
         "default": 6
+      },
+      {
+        "type": "range",
+        "id": "text_size_mobile",
+        "label": "Date size",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "default": 2
       },
       {
         "type": "select",

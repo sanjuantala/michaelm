@@ -73,6 +73,8 @@ Required params:
           {%- if title != blank -%}
             <h2 class="hero__title h4">
               {{ title | escape }}
+
+              {%- render 'superscript', link_collection: link -%}
             </h2>
           {%- endif -%}
 

@@ -47,16 +47,24 @@
   {%- if has_content -%}
     <div class="grid__heading-text">
       {%- if title != blank -%}
-        {%- assign animation_order = animation_order | plus: 1 -%}
-        <h2 class="grid__heading heading-size-5"
+        {%- liquid
+          assign font_size_class = section.settings.heading_size | prepend: 'heading-size-'
+          assign animation_order = animation_order | plus: 1
+        -%}
+
+        <h2 class="grid__heading {{ font_size_class }}"
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="{{ animation_order }}">{{ title }}</h2>
       {%- endif -%}
 
       {%- if text != blank -%}
-        {%- assign animation_order = animation_order | plus: 1 -%}
-        <div class="grid__description"
+        {%- liquid
+          assign font_size_class = section.settings.text_size | prepend: 'body-size-'
+          assign animation_order = animation_order | plus: 1
+        -%}
+
+        <div class="grid__description {{ font_size_class }}"
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
           data-aos-order="{{ animation_order }}">
@@ -166,8 +174,18 @@
                     assign align_with_image = block.settings.align_with_product_images
                     assign featured_animation_order = 1
                     assign image = block.settings.image
+
+                    for product in featured_collection.products
+                      if product.tags contains 'hide'
+                        continue
+                      else
+                        assign featured_collection_first_product_image = product.featured_media.preview_image
+                        break
+                      endif
+                    endfor
+
                     if image == blank
-                      assign image = featured_collection.image | default: featured_collection.products.first.featured_media.preview_image
+                      assign image = featured_collection.image | default: featured_collection_first_product_image
                     endif
 
                     capture index
@@ -267,8 +285,16 @@
 
                   {%- if featured_collection != blank -%}
                     {%- if featured_collection.products_count > 0 -%}
+                      {%- assign hidden_products = 0 -%}
+
                       {%- for product in featured_collection.products limit: block_product_limit -%}
-                        {%- assign animation_index = forloop.index0 | modulo: 4 -%}
+                        {% liquid
+                          if product.tags contains 'hide'
+                            assign hidden_products = hidden_products | plus: 1
+                          endif
+                          assign product_index = forloop.index | minus: hidden_products
+                          assign animation_index = product_index | modulo: 4
+                        %}
                         {%- render 'product-grid-item', product: product, animation_delay: animation_index, index: forloop.index, block_index: block_index -%}
                       {%- endfor -%}
                     {%- else -%}
@@ -388,9 +414,27 @@
       "type": "text"
     },
     {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 5
+    },
+    {
       "type": "richtext",
       "id": "text",
       "label": "Text"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 3
     },
     {
       "type": "select",

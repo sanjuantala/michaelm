@@ -198,13 +198,6 @@
 /* === Product grid sale tags ===*/
 --COLOR-SALE-BG: {{ settings.sale_bg_color }};
 --COLOR-SALE-TEXT: {{ settings.sale_text_color }};
-{%- assign sale_text_secondary = settings.sale_bg_color -%}
-{%- assign sale_text_secondary_downcase = sale_text_secondary | downcase -%}
-{%- assign bg_color_global_downcase = settings.bg_color | downcase -%}
-{%- if sale_text_secondary_downcase == bg_color_global_downcase -%}
-  {%- assign sale_text_secondary = settings.text_color -%}
-{%- endif -%}
---COLOR-SALE-TEXT-SECONDARY: {{ sale_text_secondary }};
 
 /* === Product grid badges ===*/
 --COLOR-BADGE-BG: {{ settings.badge_bg_color }};

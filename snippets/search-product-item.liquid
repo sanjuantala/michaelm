@@ -23,6 +23,11 @@
   assign animation_anchor = animation_anchor | default: ''
   assign focusable = focusable | default: false
 
+  assign hidden_product = false
+  if product.tags contains 'hide'
+    assign hidden_product = true
+  endif
+
   assign product_double_class = ''
   if second_image.preview_image and show_second_image
     assign product_double_class = ' double__image'
@@ -33,35 +38,36 @@
   assign image_sizes = '(min-width: 1400px) calc((80vw - 100px) / 4), (min-width: 750px) calc(1100px / 3), 50px'
 -%}
 
-<div class="predictive-search__grid-item product-item product-item grid-item{{ product_item_classes }}"
-  role="option"
-  aria-selected="false"
-  data-aos="fade"
-  data-aos-delay="{{ animation_delay }}"
-  data-aos-duration="{{ animation_duration }}"
-  data-aos-anchor="{{ animation_anchor }}">
-  <a href="{{ product.url }}" class="product-link" aria-label="{{ product.title | strip_html | escape }}"{% unless focusable %} tabindex="-1"{% endunless %}>
-    <div class="product-item__image{{ product_double_class }}{% unless featured_image %} image--empty{% endunless %}">
-      {%- if featured_image -%}
-        <div class="product-item__bg">
-          {%- render 'image' image: featured_image.preview_image, sizes: image_sizes, cover: true -%}
-        </div>
-
-        {%- if show_second_image -%}
-          <div class="product-item__bg__under">
-            {%- render 'image' image: second_image.preview_image, sizes: image_sizes, cover: true -%}
+{%- unless hidden_product -%}
+  <div class="predictive-search__grid-item product-item product-item grid-item{{ product_item_classes }}"
+    role="option"
+    aria-selected="false"
+    data-aos="fade"
+    data-aos-delay="{{ animation_delay }}"
+    data-aos-duration="{{ animation_duration }}"
+    data-aos-anchor="{{ animation_anchor }}">
+    <a href="{{ product.url }}" class="product-link" aria-label="{{ product.title | strip_html | escape }}"{% unless focusable %} tabindex="-1"{% endunless %}>
+      <div class="product-item__image{{ product_double_class }}{% unless featured_image %} image--empty{% endunless %}">
+        {%- if featured_image -%}
+          <div class="product-item__bg">
+            {%- render 'image' image: featured_image.preview_image, sizes: image_sizes, cover: true -%}
           </div>
+
+          {%- if show_second_image -%}
+            <div class="product-item__bg__under">
+              {%- render 'image' image: second_image.preview_image, sizes: image_sizes, cover: true -%}
+            </div>
+          {%- endif -%}
         {%- endif -%}
-      {%- endif -%}
-    </div>
+      </div>
 
-    <div class="product-information">
-      <div class="product-item__info">
-        <p class="product-item__title">
-          {{ product.title | strip_html }}
-        </p>
+      <div class="product-information">
+        <div class="product-item__info">
+          <p class="product-item__title">
+            {{ product.title | strip_html }}
+          </p>
 
-        {% comment %} Price on product grid item {% endcomment %}
+          {% comment %} Price on product grid item {% endcomment %}
 
 {%- liquid
   if settings.currency_code_enable
@@ -74,7 +80,7 @@
 -%}
 
 <span class="price{% if product.compare_at_price > product.price %} sale{% endif %}">
-  {% if product.available %}
+  {% if product.available or badge_soldout != '' %}
     <span class="new-price">
       {% if product.price_varies %}
         <small>{{ 'products.general.from' | t }}</small>
@@ -107,7 +113,8 @@
   <span class="visually-hidden visually-hidden--inline">{{ 'products.product.unit_price_label' | t }}</span>
   <span class="unit small">{% if settings.currency_code_enable %}{{ current_variant.unit_price | money_with_currency }}{% else %}{{ current_variant.unit_price | money }}{% endif %}{{ unit_price_separator }}{{ unit_price_base_unit }}</span>
 {% endif %}
-        </div>
-    </div>
-  </a>
-</div>
+          </div>
+      </div>
+    </a>
+  </div>
+{%- endunless -%}

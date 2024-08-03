@@ -60,8 +60,9 @@
             {% comment %} Determine if current option matches swatch handle translations {% endcomment %}
 {%- liquid
   assign is_swatch_option = false
+  assign is_native_swatch_option = false
 
-  if settings.color_swatches and filter.presentation != 'swatch'
+  if settings.swatches_type == 'theme'
     assign swatch_translation = 'general.swatches.color' | t
     assign translation_string = swatch_translation | remove: '  ' | replace: ', ', ',' | replace: ' ,', ',' | replace: ',', '____' | handle | replace: '____', ',' | append: ',' | prepend: ','
 
@@ -69,12 +70,21 @@
       assign is_swatch_option = true
     endif
   endif
+
+  if settings.swatches_type == 'native'
+    for value in option.values
+      if value.swatch
+        assign is_native_swatch_option = true
+        break
+      endif
+    endfor
+  endif
 -%}
 
 
             {%- case filter.type -%}
               {%- when 'list' or 'boolean' -%}
-                <ul class="collection-nav">
+                <ul class="collection-nav{% if filter.presentation == "image" %} collection-nav--image-grid{% endif %}">
                   {%- for filter_value in filter.values -%}
                     <li class="sidebar__item{% if filter_value.active %} sidebar__item--active link--remove{% elsif filter_value.count == 0 and filter_value.active == false %} link--disable{% else %} link--add{% endif %}{% if forloop.index > 10 %} hidden{% endif %}"{% if forloop.index > 10 %} data-link-hidden{% endif %}>
                       <radio-swatch>
@@ -85,7 +95,7 @@
                           {% if filter_value.active -%}checked{%- endif %}
                           {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}>
                         <label for="filter-{{ filter.label }}-{{ forloop.index }}">
-                          {%- if is_swatch_option -%}
+                          {%- if is_swatch_option and filter.presentation != 'swatch' -%}
                             <span
                               class="swatches swatch__button {{ swatch_button_style }} swatch-{{ filter_value.label | handle }}"
                               data-swatch="{{ filter_value.label | escape_once }}"
@@ -95,54 +105,42 @@
                           {%- elsif filter.presentation == 'swatch' -%}
                             {%- liquid
                               assign empty_swatch = false
-                              if filter_value.display.type != "colors" and filter_value.display.type != "image"
+                              if filter_value.swatch.color == blank and filter_value.swatch.image == blank
                                 assign empty_swatch = true
                               endif
                             -%}
 
                             <div class="shopify-swatch">
-                              {%- if settings.color_swatches -%}
-                                {%- case filter_value.display.type -%}
-                                  {%- when 'colors' -%}
-                                    {% liquid
-                                      assign size_limit = filter_value.value.size | at_most: 4
-                                      assign rotation = '0deg'
-                                      if size_limit == 2
-                                        assign rotation = '45deg'
-                                      endif
+                              {%- if settings.swatches_type != 'disabled' -%}
+                                {%- if filter_value.swatch.image != blank -%}
+                                  <div class="swatch__button {{ swatch_button_style }}">
+                                    {%- render 'image' image: filter_value.swatch.image, width: 24, height: 24, sizes: '48px', widths: '24, 36, 48, 60, 72', cover: true -%}
+                                  </div>
+                                {%- elsif filter_value.swatch.color != blank -%}
+                                  {%- liquid
+                                    assign is_white = false
+                                    if filter_value.swatch.color == '#ffffff'
+                                      assign is_white = true
+                                    endif
+                                  -%}
 
-                                      assign angle_increment = 360 | divided_by: size_limit
-                                      assign angle = 0
-
-                                      assign is_white = false
-                                      if filter_value.display.value[0] == '#ffffff'
-                                        assign is_white = true
-                                      endif
-                                    %}
-
-                                    {%- capture conic_gradient -%}
-                                      {%- for color in filter_value.display.value limit: size_limit -%}
-                                        {{ color }} {{ angle }}deg{%- assign angle = angle | plus: angle_increment %} {{ angle }}deg{%- unless forloop.last %}, {%- endunless -%}
-                                      {%- endfor -%}
-                                    {%- endcapture -%}
-                                    <div
-                                      class="swatch__button {{ swatch_button_style }}"
-                                      {% if is_white %}
-                                        data-swatch="white"
-                                      {% endif %}
-                                      style="background: conic-gradient({{ conic_gradient }}); transform: rotateZ({{ rotation }});"
-                                    ></div>
-
-                                  {%- when 'image' -%}
-                                    <div class="swatch__button {{ swatch_button_style }}">
-                                      {%- render 'image' image: filter_value.display.value, width: 26, height: 26, sizes: '13px', widths: '13, 20, 26, 39', cover: true -%}
-                                    </div>
-
-                                  {%- else -%}
-                                    <div class="swatch__button {{ swatch_button_style }}{% if empty_swatch %} swatch__button--empty{% endif %}"></div>
-                                {%- endcase -%}
+                                  <div class="swatch__button {{ swatch_button_style }}"
+                                    {% if is_white %}
+                                      data-swatch="white"
+                                    {% endif %}
+                                    style="background-color: {{ filter_value.swatch.color }};"
+                                  ></div>
+                                {%- else -%}
+                                  <div class="swatch__button {{ swatch_button_style }}{% if empty_swatch %} swatch__button--empty{% endif %}"></div>
+                                {%- endif -%}
                               {%- endif -%}
                             </div>
+                          {%- elsif filter.presentation == 'image' -%}
+                            {%- capture sizes -%}
+                              (min-width: 990px) 40px, (min-width: 750px) 43px, calc((100vw - 96px) / 3)
+                            {%- endcapture -%}
+
+                            {%- render 'image' image: filter_value.image.preview_image, height: 100, sizes: sizes, widths: '50, 100, 150, 200, 250, 300' -%}
                           {%- endif -%}
 
                           <span>{{ filter_value.label }}</span>
@@ -165,6 +163,10 @@
                   {%- liquid
                     if shop.money_format contains "comma_separator"
                       assign filter_max_money = filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.'
+                    elsif shop.money_format contains "space_separator"
+                      assign filter_max_money = filter.range_max | money_without_currency | replace: ' ', '' | replace: ',', '.'
+                    elsif shop.money_format contains "apostrophe_separator"
+                      assign filter_max_money = filter.range_max | money_without_currency | replace: "'", ''
                     else
                       assign filter_max_money = filter.range_max | money_without_currency | replace: ',', ''
                     endif
@@ -175,6 +177,10 @@
                     if filter.min_value.value
                       if shop.money_format contains "comma_separator"
                         assign filter_min_value = filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' | floor
+                      elsif shop.money_format contains "space_separator"
+                        assign filter_min_value = filter.min_value.value | money_without_currency | replace: ' ', '' | replace: ',', '.' | floor
+                      elsif shop.money_format contains "apostrophe_separator"
+                        assign filter_min_value = filter.min_value.value | money_without_currency | replace: "'", '' | floor
                       else
                         assign filter_min_value = filter.min_value.value | money_without_currency | replace: ',', '' | floor
                       endif
@@ -183,6 +189,10 @@
                     if filter.max_value.value
                       if shop.money_format contains "comma_separator"
                         assign filter_max_value = filter.max_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' | ceil
+                      elsif shop.money_format contains "space_separator"
+                        assign filter_max_value = filter.max_value.value | money_without_currency | replace: ' ', '' | replace: ',', '.' | ceil
+                      elsif shop.money_format contains "apostrophe_separator"
+                        assign filter_max_value = filter.max_value.value | money_without_currency | replace: "'", '' | ceil
                       else
                         assign filter_max_value = filter.max_value.value | money_without_currency | replace: ',', '' | ceil
                       endif
@@ -200,6 +210,8 @@
                       <span data-range-line>&nbsp;</span>
                     </div>
                   </range-slider>
+
+                  <script src="{{ 'range-slider.js' | asset_url }}" defer="defer"></script>
 
                   <div class="filter__price__fields">
                     <div class="filter__price__field filter__price__from">

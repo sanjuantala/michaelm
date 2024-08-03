@@ -7,8 +7,8 @@
     - end_date: {Datetime} Expiration date (required)
     - end_time: {Datetime} Expiration time (required)
     - period: {String} AM/PM (required)
-    - text_size_desktop: {Integer} Text size from 1 to 15 (optional)
-    - text_size_mobile: {Integer} Text size from 1 to 15 (optional)
+    - digits_size_desktop: {Integer} Text size from 1 to 15 (optional)
+    - digits_size_mobile: {Integer} Text size from 1 to 15 (optional)
     - boxed: {Boolean} Add a box around the digits (optional)
     - end_message: {String} End of timer message (Optional)
     - hide_on_complete: {Boolean} Otherwise the end of timer message appears in place of the countdown timer. (Default: false)
@@ -20,8 +20,10 @@
 {% endcomment %}
 
 {%- liquid
-  assign text_size_desktop = text_size_desktop | default: 10
-  assign text_size_mobile = text_size_mobile | default: 6
+  assign digits_size_desktop = digits_size_desktop | default: 10
+  assign digits_size_mobile = digits_size_mobile | default: 6
+  assign text_size_desktop = text_size_desktop | default: 2
+  assign text_size_mobile = text_size_mobile | default: 2
   assign end_time_hour = end_time | split: ':' | first | times: 1
   assign end_time_minute = end_time | split: ':' | last
 
@@ -112,8 +114,10 @@
 <countdown-timer
   data-expiration-behavior="{{ expiration_behaviour }}"
   style="
-    --digit-font-size-desktop: var(--font-{{ text_size_desktop }});
-    --digit-font-size-mobile: var(--font-{{ text_size_mobile }});"
+    --digit-font-size-desktop: var(--font-{{ digits_size_desktop }});
+    --digit-font-size-mobile: var(--font-{{ digits_size_mobile }});
+    --text-font-size-desktop: var(--font-{{ text_size_desktop }});
+    --text-font-size-mobile: var(--font-{{ text_size_mobile }});"
 >
   <div class="countdown__timer">
     <time class="countdown__datetime" datetime="{{ expiration_date | date: '%Y-%m-%dT%H:%M:%S.%3N%z' }}">

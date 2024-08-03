@@ -327,6 +327,10 @@
       </div>
     </div>
   </section>
+
+  {%- if enable_sort or enable_filters -%}
+    <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
 {%- endpaginate -%}
 
 {% schema %}

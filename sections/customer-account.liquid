@@ -88,8 +88,8 @@
                     <td class="order-number">
                       <span>{{ order.name | link_to: order.customer_url }}</span>
                     </td>
-                    <td class="date"><span class="note">
-                      <span>{{ order.created_at | date: format: 'full_date' }}</span>
+                    <td class="date">
+                      <span class="note">{{ order.created_at | date: format: 'full_date' }}</span>
                     </td>
                     <td class="payment-status">
                       <span>{{ order.financial_status_label }}</span>

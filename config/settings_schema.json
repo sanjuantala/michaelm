@@ -2,7 +2,7 @@
   {
     "name": "theme_info",
     "theme_name": "Broadcast",
-    "theme_version": "5.5.0",
+    "theme_version": "5.8.0",
     "theme_author": "Invisible",
     "theme_support_url": "https://broadcast.invisiblethemes.com/support/contacting-support",
     "theme_documentation_url": "https://broadcast.invisiblethemes.com"
@@ -465,14 +465,21 @@
       },
       {
         "type": "header",
-        "content": "Outlines"
+        "content": "Design Elements"
       },
       {
         "type": "checkbox",
         "id": "product_grid_outline",
-        "label": "Show outlines",
+        "label": "Enable borders",
         "default": true,
         "info": "For Featured collection, Collection list and Blog posts."
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_superscript",
+        "label": "Enable superscript",
+        "default": false,
+        "info": "Show how many products are in a collection"
       },
       {
         "type": "header",
@@ -660,9 +667,18 @@
       },
       {
         "type": "checkbox",
-        "label": "Show second image on hover",
+        "label": "Show additional images",
         "id": "image_hover_enable",
         "default": true
+      },
+      {
+        "type": "range",
+        "id": "image_hover_limit",
+        "min": 2,
+        "max": 5,
+        "step": 1,
+        "label": "Limit product images",
+        "default": 2
       },
       {
         "type": "range",
@@ -715,6 +731,28 @@
         "default": "#ffffff"
       },
       {
+        "type": "checkbox",
+        "id": "show_sold_out_badge",
+        "label": "Show sold out badge",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_automatic_new_badge",
+        "label": "Show automatic new badge",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "badge_new_date_limit",
+        "label": "Date limit",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "default": 5,
+        "info": "Badge appears if product was created within this many days"
+      },
+      {
         "type": "header",
         "content": "Quick add"
       },
@@ -725,14 +763,27 @@
         "default": true
       },
       {
+        "type": "checkbox",
+        "id": "show_gift_card_recipient",
+        "label": "Show recipient information form for gift card products",
+        "default": false,
+        "info": "Gift card products can optionally be sent direct to a recipient along with a personal message."
+      },
+      {
         "type": "header",
-        "content": "Sibling swatches"
+        "content": "Swatches"
       },
       {
         "type": "checkbox",
         "label": "Show siblings on collections",
         "id": "show_siblings",
         "info": "Learn more about linked [color siblings](https://broadcast.invisiblethemes.com/siblings/product-siblings/about-product-siblings)",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "label": "Show color swatches on collections",
+        "id": "show_grid_swatches",
         "default": true
       },
       {
@@ -791,11 +842,60 @@
         "default": true
       },
       {
+        "type": "header",
+        "content": "Variant image",
+        "info": "Show an image with your size or custom variant. Works best when form style is set to classic. [Learn more](https://invisiblethemes.com/link/broadcast/size-variant-image)"
+      },
+      {
         "type": "checkbox",
-        "id": "show_gift_card_recipient",
-        "label": "Show recipient information form for gift card products",
-        "default": false,
-        "info": "Gift card products can optionally be sent direct to a recipient along with a personal message."
+        "id": "show_variant_image",
+        "label": "Show variant image",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "variant_image_style",
+        "label": "Swatch style",
+        "options": [
+          { "value": "stacked", "label": "Stacked" },
+          { "value": "inline", "label": "In-line" }
+        ],
+        "default": "inline"
+      },
+      {
+        "type": "header",
+        "content": "Out of stock notification"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_newsletter",
+        "label": "Show \"Notify me when available\" popup",
+        "info": "[Learn more](https://invisiblethemes.com/link/broadcast/back-in-stock)",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Final sale"
+      },
+      {
+        "type": "paragraph",
+        "content": "Let customers know a product is final sale and ineligible for returns."
+      },
+      {
+        "type": "checkbox",
+        "id": "final_sale",
+        "label": "Show on all sale products",
+        "default": false
+      },
+      {
+        "type": "paragraph",
+        "content": "For specific products or variants use metafields. [Learn more](https://invisiblethemes.com/link/broadcast/final-sale)"
+      },
+      {
+        "type": "richtext",
+        "id": "final_sale_tooltip",
+        "label": "Content on hover",
+        "default": "<p>Final sale products can't be returned or exchanged.</p>"
       }
     ]
   },
@@ -807,15 +907,21 @@
         "content": "To use swatches on variants other than color, visit your [language files](/admin/settings/languages)"
       },
       {
-        "type": "checkbox",
-        "id": "color_swatches",
-        "label": "Show color swatches",
-        "default": true
+        "type": "select",
+        "id": "swatches_type",
+        "label": "Swatches type",
+        "options": [
+          { "value": "theme", "label": "Theme" },
+          { "value": "native", "label": "Native" },
+          { "value": "disabled", "label": "None" }
+        ],
+        "default": "theme"
       },
       {
         "type": "checkbox",
         "id": "variant_on_sale",
-        "label": "Show sale indicator below color swatches",
+        "label": "Show sale indicator",
+        "info": "Red dot appears under color swatches",
         "default": true
       },
       {
@@ -832,6 +938,7 @@
         "type": "select",
         "id": "swatch_style",
         "label": "Swatch style",
+        "info": "[Learn more](https://invisiblethemes.com/link/broadcast/swatch-styles)",
         "options": [
           { "value": "circle", "label": "Circle" },
           { "value": "square", "label": "Square" }
@@ -847,6 +954,19 @@
           { "value": "image", "label": "Product image" }
         ],
         "default": "image"
+      },
+      {
+        "type": "select",
+        "id": "collection_swatch_style",
+        "label": "Collection style",
+        "options": [
+          { "value": "text", "label": "Text only" },
+          { "value": "slider", "label": "Slider" },
+          { "value": "text-slider", "label": "Slider on hover" },
+          { "value": "limited", "label": "Swatch with text" },
+          { "value": "grid", "label": "Grid" }
+        ],
+        "default": "text-slider"
       },
       {
         "type": "textarea",
@@ -933,6 +1053,12 @@
         "type": "product_list",
         "id": "empty_cart_products",
         "label": "Products"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_recently_viewed_products",
+        "label": "Show recently viewed products",
+        "default": false
       }
     ]
   },

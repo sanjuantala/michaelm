@@ -195,7 +195,7 @@
             <div id="EditAddress_{{ address.id }}" class="hidden">
               <hr>
               {%- form 'customer_address', address -%}
-                <h4 class="h4--body">{{ 'customer.addresses.edit_address' | t }}</h2>
+                <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
 
                 <div class="grid grid--2">
                   <div class="grid__item">
@@ -307,6 +307,7 @@
 
           {%- render 'pagination', paginate: paginate -%}
         {%- endpaginate -%}
+      </div>
     </div>
   </div>
 </section>

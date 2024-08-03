@@ -96,6 +96,8 @@
       <span>
         {%- if collection_title != blank -%}
           {{ collection_title }}
+
+          {%- render 'superscript', superscript_collection: collection -%}
         {%- else -%}
           {{ 'collections.general.items.heading' | t }}
         {%- endif -%}

@@ -34,7 +34,15 @@
   {%- if link.url == "#" -%}
     <span class="sliderow__title{% if secondary_menu %} sliderow__title--secondary{% endif %}{% if highlight_item == link_title_lowercase %} sliderow__title--highlight{% endif %}" data-sliderule-close="sliderule-{{ key }}">{{ link.title | strip_html | escape }}</span>
   {%- else -%}
-    <a class="sliderow__title{% if secondary_menu %} sliderow__title--secondary{% endif %}{% if highlight_item == link_title_lowercase %} sliderow__title--highlight{% endif %}" href="{{ link.url }}">{{ link.title | strip_html | escape }}</a>
+    <a class="sliderow__title{% if secondary_menu %} sliderow__title--secondary{% endif %}{% if highlight_item == link_title_lowercase %} sliderow__title--highlight{% endif %}" href="{{ link.url }}">
+      <span>
+        {{ link.title | strip_html | escape }}
+
+        {%- if expands or link_level > 0 -%}
+          {%- render 'superscript', link_collection: link -%}
+        {%- endif -%}
+      </span>
+    </a>
   {%- endif -%}
 {%- endcapture -%}
 
@@ -47,7 +55,14 @@
       data-animation-duration="{{ animation_duration }}"
       data-sliderule-open="sliderule-{{ key }}">
       <span class="sliderow__title{% if secondary_menu %} sliderow__title--secondary{% endif %}{% if highlight_item == link_title_lowercase %} sliderow__title--highlight{% endif %}">
-        {{ link.title | strip_html | escape }}
+        <span>
+          {{ link.title | strip_html | escape }}
+
+          {%- if link_level > 0 -%}
+            {%- render 'superscript', link_collection: link -%}
+          {%- endif -%}
+        </span>
+
         <span class="sliderule__chevron--right">
           {%- render 'icon-arrow-right' -%}
           <span class="visually-hidden">{{ 'general.accessibility.show_menu' | t }}</span>

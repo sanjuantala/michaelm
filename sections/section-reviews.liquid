@@ -51,13 +51,14 @@
   #Reviews--{{ section.id }} {
     --PT: {{ section.settings.padding_top }}px;
     --PB: {{ section.settings.padding_bottom }}px;
-    {% unless text_color == 'rgba(0,0,0,0)' or text_color == blank %}
+    {% unless text_color.alpha == 0.0 or text_color == blank %}
       --text: {{ text_color }};
     {% endunless %}
-    {% unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank %}
+    {% unless bg_color.alpha == 0.0 or bg_color == blank %}
       --bg: {{ bg_color }};
     {% endunless %}
-    {% unless card_bg_color == 'rgba(0,0,0,0)' or card_bg_color == blank %}
+    {% unless card_bg_color.alpha == 0.0 or card_bg_color == blank %}
+      {%- assign card_background = true -%}
       --card-bg: {{ card_bg_color }};
     {% endunless %}
 
@@ -87,6 +88,9 @@
               assign review_block_classes = 'review'
               if show_featured_image
                 assign review_block_classes = review_block_classes | append: ' review--has-image'
+              endif
+              if card_background
+                assign review_block_classes = review_block_classes | append: ' review--has-card-bg'
               endif
 
               if forloop.index > 2

@@ -265,7 +265,7 @@
                   {% endcomment %}
                   {%- assign article_content = article.content | split: '/products/' -%}
 
-                  {%- if article_content.size > 0 -%}
+                  {%- if article_content.size > 0 and block.settings.product_list.count < 1 -%}
                     {%- assign starts_with_handle = '' -%}
 
                     {%- for item in article_content -%}
@@ -283,19 +283,27 @@
                   {%- assign handles_arr = handles | split: ',' | compact | uniq -%}
 
                   <div class="widget" {{ block.shopify_attributes }}>
-                    {%- if handles_arr.size > 0 -%}
+                    {%- if handles_arr.size > 0 or block.settings.product_list.count > 0 -%}
                       {%- if block.settings.title != blank -%}
                         <h3 class="widget__title">{{ block.settings.title }}</h3>
                       {%- endif -%}
 
                       <div class="widget__products">
-                        {%- for handle in handles_arr limit: 20 -%}
-                          {%- assign product = all_products[handle] -%}
+                        {%- liquid
+                          if block.settings.product_list.count > 0
+                            for product in block.settings.product_list
+                              render 'product-column-item', product: product
+                            endfor
+                          elsif handles_arr.size > 0
+                            for handle in handles_arr limit: 20
+                              assign product = all_products[handle]
 
-                          {%- if product.id != '' -%}
-                            {%- render 'product-column-item', product: product -%}
-                          {%- endif -%}
-                        {%- endfor -%}
+                              if product.id != ''
+                                render 'product-column-item', product: product
+                              endif
+                            endfor
+                          endif
+                        -%}
                       </div>
                     {%- endif -%}
                   </div>
@@ -687,6 +695,12 @@
             "label": "Heading",
             "default": "Related products",
             "info": "Products linked in the article body appear as Related products"
+          },
+          {
+            "type": "product_list",
+            "id": "product_list",
+            "label": "Products",
+            "limit": 5
           }
         ]
       },

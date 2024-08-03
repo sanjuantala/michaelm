@@ -28,11 +28,23 @@
 
   capture sizes
     if wrapper == 'wrapper--full'
-      echo '(min-width: 750px) calc((100vw - 100px) / 2), calc(100vw - 32px)'
+      if compare_images_width == 'half'
+        echo '(min-width: 750px) calc((100vw / 2), 100vw'
+      else
+        echo '100vw'
+      endif
+    elsif wrapper == 'wrapper--full-padded'
+      if compare_images_width == 'half'
+        echo '(min-width: 750px) calc((100vw - 100px) / 2), calc(100vw - 32px)'
+      else
+        echo '(min-width: 750px) calc(100vw - 100px), calc(100vw - 32px)'
+      endif
     elsif wrapper == 'wrapper--narrow'
-      echo '(min-width: 750px) calc(670px / 2), calc(100vw - 32px)'
-    else
-      echo '(min-width: 750px) calc(1100px / 2), calc(100vw - 32px)'
+      if compare_images_width == 'half'
+        echo '(min-width: 750px) calc((80vw - 100px) / 2), calc(100vw - 32px)'
+      else
+        echo '(min-width: 750px) calc(80vw - 100px), calc(100vw - 32px)'
+      endif
     endif
   endcapture
 -%}

@@ -136,6 +136,17 @@
     },
     {
       "type": "header",
+      "content": "Advanced"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_placeholder",
+      "label": "Show placeholder image",
+      "info": "Disable if using a metafield",
+      "default": true
+    },
+    {
+      "type": "header",
       "content": "Section padding"
     },
     {
@@ -421,7 +432,7 @@
             { "label": "Green shipment", "value": "icon-green-shipment" },
             { "label": "Heart", "value": "icon-heart" },
             { "label": "Leaf", "value": "icon-leaf" },
-            { "label": "Lightening", "value": "icon-lightening" },
+            { "label": "Lightning", "value": "icon-lightning" },
             { "label": "Location", "value": "icon-location" },
             { "label": "Mail", "value": "icon-mail" },
             { "label": "Notes", "value": "icon-notes" },
@@ -687,6 +698,32 @@
           "id": "show_arrow",
           "label": "Show arrow",
           "default": false
+        },
+        {
+          "type": "header",
+          "content": "Block spacing"
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 50,
+          "step": 2,
+          "unit": "px",
+          "label": "Padding bottom",
+          "default": 16
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "name": "Custom code",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "code",
+          "label": "Custom code",
+          "default": "<p>Once you write some custom code, it will render right here.</p>"
         },
         {
           "type": "header",

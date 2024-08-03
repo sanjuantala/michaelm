@@ -23,9 +23,7 @@
   {%- endstyle -%}
 
   <section class="subcollections collection-{{ collection.handle }} section-padding"
-    id="Subcollections--{{ section.id }}"
-    data-section-id="{{ section.id }}"
-    data-section-type="collection">
+    id="Subcollections--{{ section.id }}">
     {%- if sub_collections.size > 0 -%}
       {%- for sublink in sub_collections -%}
         {%- liquid

@@ -13,10 +13,19 @@
 
 {%- for block in section.blocks -%}
   {%- if block.type == 'related' and product.collections.size > 0 -%}
-    {%- assign has_related_products = true -%}
+    {%- liquid
+      assign has_related_products = true
+      assign layout_mobile = section.settings.layout_mobile
+      assign columns_small = 2
+      assign columns_mobile = layout_mobile | plus: 0
+    -%}
 
     {%- capture related -%}
-      <div data-related-section data-limit="{{ block.settings.limit }}" data-product-id="{{ product.id }}" style="--column-count: {{ block.settings.limit | at_most: 4 }};" {{ block.shopify_attributes }}></div>
+      <div data-related-section
+        data-limit="{{ block.settings.limit }}"
+        data-product-id="{{ product.id }}"
+        style="--column-count: {{ block.settings.limit | at_most: 4 }}; --COLUMNS-SMALL: {{ columns_small }}; --COLUMNS-MOBILE: {{ columns_mobile }};"
+        {{ block.shopify_attributes }}></div>
     {%- endcapture -%}
 
     {%- capture related_title -%}
@@ -169,6 +178,26 @@
         "step": 1,
         "default": 4,
         "info": "Applies only when tabs are disabled"
+      },
+      {
+        "type": "select",
+        "id": "layout_mobile",
+        "label": "Mobile layout",
+        "options": [
+          {
+            "value": "1",
+            "label": "1 item per row"
+          },
+          {
+            "value": "2",
+            "label": "2 items per row"
+          },
+          {
+            "value": "slider",
+            "label": "Slider"
+          }
+        ],
+        "default": "slider"
       },
       {
         "type": "header",

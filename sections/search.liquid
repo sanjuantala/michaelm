@@ -3,6 +3,7 @@
   assign enable_sort = section.settings.enable_sort
   assign enable_filters = section.settings.enable_filters
   assign filter_layout = section.settings.filter_layout
+  assign hidden_products_count = 0
 
   if filter_layout == 'inline-open'
     assign show_group_filters = true
@@ -50,10 +51,45 @@
 </main-search>
 
   {%- if search.performed -%}
+    {%- capture search_results -%}
+      {%- paginate search.results by 36 -%}
+        <div class="grid-outer" data-products-grid>
+          <div class="grid" id="SearchLoop">
+            {%- if search.results == empty -%}
+              <div class="no-results">
+                <p><strong>{{ 'collections.general.no_matches' | t }}</strong></p>
+              </div>
+            {%- else -%}
+              {%- liquid
+                for item in search.results
+                  if item.tags contains 'hide'
+                    assign hidden_products_count = hidden_products_count | plus: 1
+                  endif
+
+                  if item.object_type == 'product'
+                    render 'product-grid-item', product: item, index: forloop.index
+                  else
+                    render 'search-results-item', item: item, tabindex: true
+                  endif
+                endfor
+              -%}
+            {%- endif -%}
+          </div>
+
+          {%- render 'pagination', paginate: paginate -%}
+
+          <div class="grid__loader">
+            <div class="loader grid__loader-line"><div class="loader-indeterminate"></div></div>
+          </div>
+        </div>
+      {%- endpaginate -%}
+    {%- endcapture -%}
+
     {%- if search.results == empty -%}
       <p class="search__caption caps">{{ 'general.search.no_results' | t: terms: search.terms }}</p>
     {%- else -%}
-      <p class="search__caption caps" data-results-count>{{ 'general.search.results_with_count_and_term' | t: terms: search.terms, count: search.results_count }}</p>
+    {% assign search_results_count = search.results_count | minus: hidden_products_count %}
+      <p class="search__caption caps" data-results-count>{{ 'general.search.results_with_count_and_term' | t: terms: search.terms, count: search_results_count }}</p>
     {%- endif -%}
 
     {%- liquid
@@ -148,36 +184,14 @@
         </collection-filters-form>
       {%- endif -%}
 
-      {%- paginate search.results by 36 -%}
-        <div class="grid-outer" data-products-grid>
-          <div class="grid" id="SearchLoop">
-            {%- if search.results == empty -%}
-              <div class="no-results">
-                <p><strong>{{ 'collections.general.no_matches' | t }}</strong></p>
-              </div>
-            {%- else -%}
-              {%- liquid
-                for item in search.results
-                  if item.object_type == 'product'
-                    render 'product-grid-item', product: item, index: forloop.index
-                  else
-                    render 'search-results-item', item: item, tabindex: true
-                  endif
-                endfor
-              -%}
-            {%- endif -%}
-          </div>
-
-          {%- render 'pagination', paginate: paginate -%}
-
-          <div class="grid__loader">
-            <div class="loader grid__loader-line"><div class="loader-indeterminate"></div></div>
-          </div>
-        </div>
-      {%- endpaginate -%}
+      {{ search_results }}
     </div>
   {%- endif -%}
 </section>
+
+{%- if search.performed and enable_sort or enable_filters -%}
+  <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
 
 {% schema %}
   {

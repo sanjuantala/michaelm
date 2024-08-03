@@ -34,9 +34,7 @@
       ],
       "settings": {
         "logo": "{{ shop.brand.logo }}",
-        "logo_image_width": 150,
-        "overlay_opacity": 75,
-        "overlay_color": "#ffffff"
+        "logo_image_width": 150
       }
     },
     "supporting-menu": {

@@ -29,11 +29,17 @@
   {%- assign limit = limit | plus: 2 -%}
 {%- endif -%}
 
-{%- if collection.products_count > 0 -%}
-  {% for product in collection.products limit: limit %}
-    {%- if forloop.last -%}
-      {%- assign products_list_index = forloop.index -%}
-    {%- endif -%}
+{%- if collection != blank and collection.products_count > 0 -%}
+  {% for product in collection.products %}
+    {%- liquid
+      if product.tags contains 'hide'
+        assign limit = limit | plus: 1
+      endif
+
+      if forloop.index == limit
+        assign products_list_index = forloop.index
+      endif
+    -%}
 
     {%- if forloop.index0 <= 1 and collection_image == blank -%}
       {%- capture products_block_html -%}
@@ -46,8 +52,14 @@
       {{ products_list_html }}
       {% render 'product-grid-item', product: product, animation_delay: forloop.index0, collection: collection, index: forloop.index %}
     {%- endcapture -%}
+
+    {%- if forloop.index == limit -%}
+      {% break %}
+    {%- endif -%}
   {% endfor %}
-{%- elsif section.settings.display_type == 'selected' and block.settings.collection == blank -%}
+{%- endif -%}
+
+{%- if section.settings.display_type == 'selected' and block.settings.collection == blank -%}
   {% for i in (1..limit) %}
     {%- if forloop.last -%}
       {%- assign products_list_index = forloop.index -%}

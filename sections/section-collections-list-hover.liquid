@@ -78,6 +78,8 @@
         data-scroll-spy="#{{ unique }}"
         data-scroll-spy-mobile>
         {{- title -}}
+
+        {%- render 'superscript', superscript_collection: collection -%}
       </a>
     </div>
   {%- endcapture -%}

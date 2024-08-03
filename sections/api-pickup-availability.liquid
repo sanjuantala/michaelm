@@ -74,7 +74,7 @@
           {%- endunless -%}
         </div>
 
-        <ul class="pickup__list" role="list" data-store-availability-drawer-content>
+        <ul class="pickup__list" role="list" aria-label="{{ 'products.product.pickup_availability.pickup_options' | t }}" data-store-availability-drawer-content tabindex="0">
           {%- for availability in pick_up_availabilities -%}
             <li class="pickup__list__item">
               <p class="strong">
@@ -99,7 +99,11 @@
                 {{ address | format_address }}
 
                 {%- if address.phone.size > 0 -%}
-                  <p>{{ address.phone }}</p>
+                  {%- liquid
+                    assign address_phone = address.phone
+                    assign phone_ally = address_phone | split: '' | join: ' '
+                  -%}
+                  <a aria-label="{{ phone_ally }}" href="tel:{{ address_phone }}">{{ address_phone }}</a>
                 {%- endif -%}
               </address>
             </li>

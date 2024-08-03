@@ -12,6 +12,7 @@
   assign enable_slider = false
   assign enable_text_slider = false
   assign text_slide_blocks = section.blocks | where: "type", "text-slide"
+  assign show_placeholder = section.settings.show_placeholder
 
   assign animation_anchor = '#BrickSection--' | append: section.id
   assign animation_order = 0
@@ -237,7 +238,13 @@
             data-options='{"watchCSS": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
           {% endif %}>
 
-          {{ section_images }}
+          {%- if image_1 != blank or image_2 != blank or show_placeholder -%}
+            {{ section_images }}
+          {%- elsif request.design_mode -%}
+            <div class="brick__section-missing-metafield-image">
+              {{ 'products.general.missing_metafield_image' | t }}
+            </div>
+          {%- endif -%}
         </div>
 
         <div class="brick__block brick__block--text{% if enable_slider %} brick__block--slider{% endif %}"
@@ -628,48 +635,54 @@
                           {%- assign collection_grid_items_counter = collection_grid_items_counter | plus: 1 -%}
 
                           <div class="grid-item collection-item{% unless block.settings.show_product_card %} collection-item--transparent{% endunless %} {{ alignment_class }}">
-                            {%- if collection == empty -%}
-                              <div class="collection-item__content">
-                            {%- else -%}
+                            {%- if collection != empty and button_text == blank -%}
                               <a class="collection-item__content" href="{{ collection.url }}" aria-label="{{ collection.title | strip_html | escape }}">
-                            {%- endif -%}
-                              <div class="collection-item__image">
-                                <div class="collection-item__bg">
-                                  {%- liquid
-                                    capture placeholder
-                                      echo 'collection-' | append: forloop.index
-                                    endcapture
-
-                                    render 'image' image: collection_image, placeholder: placeholder, sizes: collection_sizes_placeholder, aspect_ratio: aspect_ratio
-                                  -%}
-                                </div>
-                              </div>
-                            {%- if collection == empty -%}
-                              </div>
                             {%- else -%}
-                              </a>
+                              <div class="collection-item__content">
                             {%- endif -%}
+                              {%- if collection != empty and button_text != blank -%}
+                                <a href="{{ collection.url }}" aria-label="{{ collection.title | strip_html | escape }}">
+                              {%- endif -%}
+                                <div class="collection-item__image">
+                                  <div class="collection-item__bg">
+                                    {%- liquid
+                                      capture placeholder
+                                        echo 'collection-' | append: forloop.index
+                                      endcapture
 
-                            {%- if button_text != blank -%}
-                              <div class="collection-item__actions">
-                                <a href="{{ collection.url | default: '#!' }}" class="btn {{ button_style }} {{ button_size }} {{ button_type }}">
-                                  <span>{{ button_text }}</span>
-
-                                  {%- if show_arrow -%}
-                                    {%- render 'icon-arrow-right' -%}
-                                  {%- endif -%}
+                                      render 'image' image: collection_image, placeholder: placeholder, sizes: collection_sizes_placeholder, aspect_ratio: aspect_ratio
+                                    -%}
+                                  </div>
+                                </div>
+                              {%- if collection != empty and button_text != blank -%}
                                 </a>
-                              </div>
-                            {%- elsif collection_title != blank -%}
-                              <div class="collection-item__info">
-                                <a href="{{ collection.url }}">
+                              {%- endif -%}
+
+                              {%- if button_text != blank -%}
+                                <div class="collection-item__actions">
+                                  <a href="{{ collection.url | default: '#!' }}" class="btn {{ button_style }} {{ button_size }} {{ button_type }}">
+                                    <span>{{ button_text }}</span>
+
+                                    {%- if show_arrow -%}
+                                      {%- render 'icon-arrow-right' -%}
+                                    {%- endif -%}
+                                  </a>
+                                </div>
+                              {%- elsif collection_title != blank -%}
+                                <div class="collection-item__info">
                                   <span>
                                     {{ collection_title }}
+
+                                    {%- render 'superscript', superscript_collection: collection -%}
                                   </span>
-                                </a>
-                              </div>
+                                </div>
+                              {%- else -%}
+                                {%- assign button_empty_counter = button_empty_counter | plus: 1 -%}
+                              {%- endif -%}
+                            {%- if collection != empty and button_text == blank -%}
+                              </a>
                             {%- else -%}
-                              {%- assign button_empty_counter = button_empty_counter | plus: 1 -%}
+                              </div>
                             {%- endif -%}
                           </div>
                         {%- endif -%}
@@ -718,6 +731,18 @@
                       {{- collection_grid_items | replace: collection_sizes_placeholder, collection_sizes_images -}}
                     </div>
 
+                  {%- when 'code' -%}
+                    {%- assign animation_order = animation_order | plus: 1 -%}
+
+                    <div class="hero__custom-code block-padding"
+                      data-aos="hero"
+                      data-aos-anchor="{{ animation_anchor }}"
+                      data-aos-order="{{ animation_order }}"
+                      style="{{ block_style }}"
+                      {{ block.shopify_attributes }}
+                    >
+                      {{ block.settings.code }}
+                    </div>
                 {%- endcase -%}
 
                 {%- if enable_text_slider -%}

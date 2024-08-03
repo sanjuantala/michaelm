@@ -2,6 +2,11 @@
 {%- liquid
   assign bg_color = section.settings.bg_color
   assign text_color = section.settings.color
+  assign image_desktop = section.settings.image
+  assign image_mobile = section.settings.image_mobile
+  assign overlay_color = section.settings.overlay_color
+  assign overlay_opacity = section.settings.overlay_opacity | times: 0.01
+  assign show_overlay_text = section.settings.show_overlay_text
   assign animation_anchor = '#Rte--' | append: section.id
   assign animation_order = 0
 -%}
@@ -25,9 +30,25 @@
   class="index-rte section-padding"
   data-section-id="{{ section.id }}"
   data-section-type="rich-text">
+  {%- if image_desktop or image_mobile -%}
+    <div class="hero__bg">
+      <div class="hero__image">
+        {%- render 'image-hero', image_desktop: image_desktop, image_mobile: image_mobile -%}
+      </div>
+
+      {%- unless show_overlay_text or overlay_opacity == 0.0 -%}
+        <div class="image-overlay" style="--overlay-bg: {{ overlay_color }}; --overlay-opacity: {{ overlay_opacity }};"></div>
+      {%- endunless -%}
+    </div>
+  {%- endif -%}
+
   {%- if section.blocks.size > 0 -%}
     <div class="hero__content__wrapper {{ section.settings.align_text }} {{ section.settings.width }}">
-      <div class="hero__content hero__content--compact">
+      <div class="hero__content hero__content--compact hero__content--transparent{% if show_overlay_text %} backdrop--radial{% endif %}"
+        {% if show_overlay_text %}
+          style="--overlay-bg: {{ overlay_color }}; --overlay-opacity: {{ overlay_opacity }};"
+        {% endif %}
+      >
         {%- for block in section.blocks -%}
           {%- liquid
             capture block_style
@@ -233,6 +254,44 @@
     },
     {
       "type": "header",
+      "content": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile image",
+      "info": "Optional"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay opacity",
+      "info": "Increase contrast for legible text.",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay color",
+      "default": "#000"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_overlay_text",
+      "label": "Overlay behind text only",
+      "default": false
+    },
+    {
+      "type": "header",
       "content": "Colors"
     },
     {
@@ -390,6 +449,10 @@
       "type": "columns",
       "name": "Columns",
       "settings": [
+        {
+          "type": "paragraph",
+          "content": "This block will be deprecated in the future. Please use the new Rich Text Columns section."
+        },
         {
           "type": "richtext",
           "id": "text",

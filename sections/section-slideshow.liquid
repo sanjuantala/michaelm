@@ -39,7 +39,16 @@
   {%- endstyle -%}
 {%- endif -%}
 
-<div class="index-hero slideshow {{ desktop_height }} {{ mobile_height }}" data-section-id="{{ section.id }}" data-section-type="slideshow" data-overlay-header>
+{%- capture style -%}
+  --PT: {{ section.settings.padding_top }}px;
+  --PB: {{ section.settings.padding_bottom }}px;
+{%- endcapture -%}
+
+<div class="index-hero slideshow {{ desktop_height }} {{ mobile_height }} section-padding"
+  data-section-id="{{ section.id }}"
+  data-section-type="slideshow"
+  data-overlay-header
+  style="{{ style }}">
   <div class="{{ section.settings.width }}">
     {%- if section.blocks.size > 0 -%}
       <div id="slideshow-{{ section.id }}" class="{{ slideshow_class }}"
@@ -313,6 +322,30 @@
       "unit":    "sec",
       "label":   "Change slides every",
       "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 0
     }
   ],
   "blocks": [
